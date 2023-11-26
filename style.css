@@ -1,0 +1,2480 @@
+@charset "utf-8";
+
+/*메인한글폰트 font-family: 'Pretendard-Regular'; ,sub 한글폰트
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    word-break: keep-all;
+    outline: 0px solid silver;
+}
+
+img {
+    width: 300px;
+}
+
+video {
+    width: 300px;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 0.9rem;
+    line-height: 1rem;
+    letter-spacing: 0.1px;
+
+}
+
+.main-m {
+    margin: 0 4%;
+}
+
+
+h1 {
+
+    font-size: 2.4rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text
+}
+
+h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Pretendard-Regular';
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+h4 {
+    font-family: 'Pretendard-Regular';
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+
+h5 {
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+}
+
+a:link {
+    color: #4d4d4d;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:visited {
+    color: #383838;
+}
+
+/*
+a:hover {
+    color: black;
+}
+*/
+
+a:active {
+    color: none;
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+hr {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+
+
+/* mobile start */
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+/* 노말라이즈 */
+
+/* 라이브러리 */
+.con {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.line-height-0>* {
+    line-height: normal;
+}
+
+.visible-on {
+    display: block;
+}
+
+.visible-off {
+    display: none;
+}
+
+.img-box {
+    overflow: hidden;
+}
+
+.img-box>img {
+    width: 100%;
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.block {
+    display: block;
+}
+
+/* 라이브러리 끝 */
+
+
+html.m-menu-scroll,
+html.m-menu-scroll>body {
+    overflow: hidden;
+}
+
+
+.pc-header {
+    display: none;
+}
+
+.join {
+    display: none;
+}
+
+main>:nth-child(3) {
+    display: none;
+}
+
+.top-b {
+    padding: 20px 15px;
+    border-radius: 50%;
+  
+    z-index: 999;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+.top-b a {
+    color: black;
+}
+
+
+
+/* 모바일 헤더 ------------*/
+.m-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 51px;
+    background-color: #ffffffef;
+    text-align: center;
+    z-index: 500;
+}
+
+.m-header>.logo {
+    width: 120px;
+    display: inline-block;
+    padding-top: 7px;
+}
+
+.m-header>.search {
+    width: 20px;
+    position: absolute;
+    top: 46%;
+    right: 20px;
+    transform: translatey(-50%);
+    z-index: 999;
+}
+
+
+
+
+
+
+
+
+/* 모바일 메뉴 버튼 */
+.m-header>.m-menu-btn {
+    position: absolute;
+    top: 45%;
+    left: 12px;
+    transform: translatey(-50%);
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.m-header>.m-menu-btn>div {
+    width: 50%;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: top .2s, transform .2s, opacity .2s;
+}
+
+.m-header>.m-menu-btn>div:nth-child(2) {
+    top: 23px;
+}
+
+.m-header>.m-menu-btn>div:nth-child(3) {
+    top: 30px;
+}
+
+/* 버튼 클릭 시 애니메이션 */
+.m-header>.m-menu-btn.active div:nth-child(1) {
+    top: 50%;
+    transform: translatex(-50%) translatey(-50%) rotate(45deg);
+}
+
+.m-header>.m-menu-btn.active div:nth-child(3) {
+    top: 50%;
+    transform: translatex(-50%) translatey(-50%) rotate(-45deg);
+}
+
+.m-header>.m-menu-btn.active div:nth-child(2) {
+    opacity: 0;
+}
+
+/* 모바일 배경 마스크 */
+.m-header>.mobile-mask {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: url(https://www.acebed.com/common/images/m-all-menu-visual4.jpg);
+    background-size: cover;
+    z-index: -5;
+    transition: height .3s;
+
+}
+
+
+/* 모바일 메뉴 리스트 */
+
+
+.m-header>.m-menu-list>ul>li {
+    visibility: hidden;
+    transform: translatey(-20px);
+    opacity: 0;
+    position: relative;
+}
+
+.m-header>.m-menu-list.active>ul>li {
+    visibility: visible;
+    transform: translatey(0);
+    opacity: 1;
+}
+
+/* li 내려오는 효과 start */
+
+.m-header>.m-menu-list.active>ul>li.delay-1 {
+    transition: visibility .5s, opacity .5s, transform .5s;
+}
+
+.m-header>.m-menu-list.active>ul>li.delay-2 {
+    transition: visibility .5s .1s, opacity .5s .1s, transform .5s .1s;
+}
+
+.m-header>.m-menu-list.active>ul>li.delay-3 {
+    transition: visibility .5s .2s, opacity .5s .2s, transform .5s .2s;
+}
+
+.m-header>.m-menu-list.active>ul>li.delay-4 {
+    transition: visibility .5s .3s, opacity .5s .3s, transform .5s .3s;
+}
+
+.m-header>.m-menu-list.active>ul>li.delay-5 {
+    transition: visibility .5s .4s, opacity .5s .4s, transform .5s .4s;
+}
+
+.m-header>.m-menu-list.active>ul>li.delay-6 {
+    transition: visibility .5s .5s, opacity .5s .4s, transform .5s .5s;
+}
+
+.m-header>.m-menu-list.active>ul>li.delay-7 {
+    transition: visibility .5s .6s, opacity .5s .5s, transform .5s .6s;
+}
+
+.m-header>.m-menu-list.active>ul>li.delay-8 {
+    transition: visibility .5s .6s, opacity .5s .6s, transform .5s .7s;
+}
+
+.m-header>.m-menu-list.active>ul>li.second-menu {
+    transition: visibility .5s .4s, opacity .5s .3s, transform .5s .6s;
+}
+
+/* li 내려오는 효과 end */
+
+.m-header>.m-menu-list>ul {
+    margin-top: 30px;
+}
+
+.m-header>.m-menu-list>ul>li>a {
+    display: block;
+    padding: 22px 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.897);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.m-header>.m-menu-list>ul>li>a>span {
+    transition: transform .3s;
+}
+
+.m-header>.m-menu-list>ul>li.active>a>span {
+    transform: rotate(180deg);
+}
+
+/* 2차 메뉴 */
+
+.m-header>.m-menu-list>ul>li>ul {
+    padding: 20px 48px;
+    background-color: #f9f9f926;
+    display: none;
+
+}
+
+.m-header>.m-menu-list>ul>li>ul>li>a {
+    display: block;
+    text-align: left;
+    padding: 8px 0;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.mypage {
+
+    padding: 10px 0;
+    padding-top: 40px;
+    text-align: left;
+    font-size: 1em;
+    background-color: rgb(255, 255, 255);
+    margin-top: -25px;
+
+}
+
+.mypage>:nth-child(1) a {
+    font-size: 1.3em;
+    font-family: 'Pretendard-Regular';
+    color: rgb(0, 0, 0);
+}
+
+
+.mypage>:nth-child(2) a {
+    font-size: 1em;
+    line-height: 3em;
+    color: rgb(95, 95, 95);
+}
+
+
+
+
+
+
+.mypage div {
+    margin-left: 20px;
+
+}
+
+
+
+.second-menu {
+
+    margin-top: 40px;
+}
+
+
+.second-menu div {
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 18px;
+    text-align: left;
+   
+}
+
+.second-menu div a {
+    color: rgb(204, 204, 204);
+    pointer-events : none;
+   
+}
+
+.second-menu div a:hover {
+    color: black;
+}
+
+.last-menu {
+    position: absolute;
+    bottom: -20px;
+    border-top: 1px solid rgba(237, 237, 237, 0.308);
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.last-menu {
+    display: flex;
+}
+
+.last-menu img {
+    width: 40px;
+    margin-right: 12px;
+    filter: invert();
+}
+
+.last-menu>:first-child {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+/* 모바일 서치 온 */
+.m-header>.m-search-on {
+    position: fixed;
+    top: 47%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    height: 105vh;
+    background: url(https://www.acebed.com/common/images/head-visual-furniture1.jpg) no-repeat;
+    background-size: cover;
+    padding: 10%;
+
+}
+
+.m-header>.m-search-on.active {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .5s, opacity 1s;
+}
+
+.m-header>.m-search-on>.m-search-box {
+    margin-top: 50px;
+    position: relative;
+    border-bottom: 1px solid #ffffffaf;
+
+}
+
+.m-header>.m-search-on>.m-search-box>input {
+    width: 90%;
+    height: 46px;
+    border: none;
+    padding: 0 20px;
+}
+
+.m-header>.m-search-on>.m-search-box>input::placeholder {
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.m-header>.m-search-on>.m-search-box>.img-box {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translatey(-50%);
+    filter: invert();
+}
+
+.m-header>.m-search-on>.m-recommend-word {
+    padding: 10px 0 0 44px;
+    text-align: left;
+}
+
+.m-header>.m-search-on>.m-recommend-word>p {
+    font-size: 14px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.m-header>.m-search-on>.m-recommend-word>p>.block {
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: -35px;
+    font-size: 1.2em;
+}
+
+.m-recommend-word li a {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.m-header>.m-search-on>.m-recommend-word>ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -35px;
+}
+
+.m-header>.m-search-on>.m-recommend-word>ul>li .m-header>.m-search-on>.m-recommend-word>ul>li>a {
+    padding: 10px 0;
+    font-size: 15px;
+    padding: 20px;
+    height: 20px;
+}
+
+.m-header input {
+    background: none;
+}
+
+/* main slider */
+
+.slide-wrap {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    /* 추가 */
+}
+
+.main-visual .slick-slide {
+    position: relative;
+    display: inline-block;
+    /* 수정 */
+    width: 100%;
+    /* 수정 */
+    white-space: normal;
+    /* 추가 */
+}
+
+
+.main-visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-visual .slick-list,
+.main-visual .slick-track {
+    height: 100%;
+}
+
+.main-visual .slick-slide {
+    position: relative;
+}
+
+.main-visual .slide-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.slide-nav .slick-prev {
+    display: none;
+}
+
+.slide-nav .slick-next {
+    display: none;
+}
+
+.main-visual .slick-slide .item-text {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    transform: translatey(-50%);
+    padding: 30px 20px;
+    color: #ffffff;
+    width: 80%;
+    font-weight: 100;
+}
+
+.main-visual .slick-slide .item-text h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #f7f7f7;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}
+
+.main-visual .slick-slide .item-text h1 {
+    color: white;
+}
+
+.main-visual .slick-slide .item-text h3 {
+    line-height: 1.4em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main-visual>:nth-child(1) .item-text {
+    top: 23%;
+    left: 0%;
+}
+
+/*
+
+.slide-wrap .main-visual>:nth-child(1)>:nth-child(1) h1 {
+    color: #384333;
+}
+*/
+
+
+
+.main-visual .slick-dots {
+    bottom: 3%;
+    z-index: 99;
+}
+
+
+/* 재생 게이지 */
+.item-gauge {
+    margin: 0 4%;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 92%;
+    height: 5px;
+    background-color: #b5b5b55b;
+}
+
+.item-gauge .gauge-fill {
+    display: block;
+    height: 100%;
+    background-color: #ffffff89;
+}
+
+
+
+
+.slick-active .item-gauge .gauge-fill {
+    animation: playProgressbar 5s 1;
+    animation-fill-mode: forwards;
+}
+
+.slide-wrap[data-autoplay="N"] .item-gauge .gauge-fill {
+    animation-play-state: paused;
+}
+
+@keyframes playProgressbar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* article 01 start */
+
+.box01 {
+    background-color: rgb(236, 234, 230);
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.box01>:first-child {
+    margin-bottom: 20px;
+}
+
+
+.box01 h1 {
+    margin-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.box01 h2 {
+
+    margin-left: 20px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #313131;
+}
+
+.box01>:nth-child(2) {
+    margin-left: 20px;
+    margin-top: -70px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    width: 85%;
+    line-height: 1.6em;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+
+
+
+.tab_container {
+    z-index: 10;
+}
+
+
+.tab_container .tab_content {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.tabs ul {
+    width: 90%;
+    display: table;
+    table-layout: fixed;
+    padding: 0;
+    margin-left: 20px;
+}
+
+
+.tabs li {
+    display: inline-flex;
+    padding: 10px 0px;
+    padding-right: 10px;
+
+}
+
+.tabs li.active a {
+    color: #000000;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.tabs li a {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+
+
+
+
+/* submenu */
+
+.tab_content {
+    overflow: hidden;
+}
+
+.tab_content>:first-child {
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.tab_content>:first-child img {
+    width: 200%;
+}
+
+.tab_content h1 {
+    width: 100%;
+    margin-top: -85px;
+    letter-spacing: 0.1em;
+    padding-right: 20px;
+    font-weight: 100;
+    font-size: 5em;
+    text-align: right;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #271307;
+}
+
+.tab_content>:nth-child(2)>:nth-child(2) {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 70%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.tab_content>:nth-child(2)>:nth-child(2) img {
+    width: 220%;
+    position: absolute;
+    left: -50%;
+}
+
+.tab_content h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+
+}
+
+.tab_content>:nth-child(3) {
+    margin-top: -20px;
+    width: 85%;
+    line-height: 1.5em;
+    letter-spacing: -0.04em;
+    font-weight: 300;
+
+}
+
+
+.tab_content>:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.705);
+}
+
+.style-b h3 {
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+}
+
+
+
+
+
+
+/* article 02 start */
+
+.box02 {
+    text-align: center;
+    background-color: rgb(247, 245, 242);
+    padding-bottom: 50px;
+    background: url(https://www.acebed.com/common/images/spring-sec-bg1-m.jpg);
+}
+
+.box02 h1 {
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 90%;
+    text-align: center;
+}
+
+.box02 h3 {
+    position: absolute;
+    top: 30px;
+    font-size: 2.8em;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 900;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    color: #c7c7c748;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: italic;
+}
+
+
+
+.box02 h2 {
+    color: rgba(0, 0, 0, 0.733);
+    font-size: 1.2em;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90%;
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    line-height: 1.5em;
+}
+
+.box02 p {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.box02 button {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    width: 45%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.box02 span {
+    font-weight: 800;
+    color: #000000ec;
+}
+
+
+.mypage-b div {
+    width: 48%;
+}
+
+
+
+.box02 button:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: transparent;
+    opacity: 0.5;
+    padding: 25px;
+    border-radius: 50%;
+    padding-top: 5px;
+    color: #313131 !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+}
+
+.box02 .video01 {
+    margin-top: 20px;
+    width: 80%;
+    height: 500px;
+
+}
+
+.box02 video {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+
+}
+
+
+/* article 03 start */
+
+.event-wrapper01 {
+    display: none;
+}
+
+
+.box03 {
+    margin: 60px 0;
+
+
+    position: relative;
+}
+
+.box03 h1 {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.box03-g {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    z-index: 1;
+}
+
+.event {
+    position: relative;
+}
+
+.event div {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.event-wrapper img {
+    position: absolute;
+    left: -8%;
+    width: 130%;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.event-wrapper img:hover {
+    width: 135%;
+    left: -10%;
+}
+
+.event p {
+    position: absolute;
+    width: 95%;
+    top: 89%;
+    font-weight: 900;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.616);
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: right;
+}
+
+
+
+.sns-icon {
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sns-icon img {
+
+    width: 27px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* article 04 start */
+
+
+.box04 {
+    position: relative;
+}
+
+
+.box04 h1 {
+    margin-top: 40px;
+}
+
+.box04 h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    width: 85%;
+    line-height: 1.6em;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+.box04 .section01 {
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+    border: 1px solid rgba(226, 226, 226, 0.692);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 10px rgba(0, 0, 0, 0.062);
+    transition: 0.2s;
+  
+}
+
+.box04 .section01:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075), 0 10px 10px rgba(0, 0, 0, 0.089);
+}
+
+.box04 .section01 img {
+    width: 50px;
+    height: 40px;
+    margin-right: 5%;
+}
+
+.box04 .section01 h3 {
+    align-items: center;
+    margin-left: 5%;
+    font-weight: 400;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 3px;
+}
+
+
+.box04>:nth-child(4) {
+    margin-bottom: 80px;
+}
+
+
+
+.box04 .visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    /* added line */
+}
+
+.box04 .slider {
+    position: relative;
+    max-width: 900px;
+    padding: 0 15px;
+    margin: 30px auto;
+}
+
+.box04 .slider-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.box04 .slider-item {
+    opacity: 0;
+    width: 0%;
+    flex-shrink: 0;
+    z-index: 1;
+    transition: opacity 1s;
+}
+
+
+
+
+#slider-control-1:checked~.slider-list .slider-item:nth-child(1),
+#slider-control-2:checked~.slider-list .slider-item:nth-child(2),
+#slider-control-3:checked~.slider-list .slider-item:nth-child(3),
+#slider-control-4:checked~.slider-list .slider-item:nth-child(4),
+#slider-control-5:checked~.slider-list .slider-item:nth-child(5) {
+    opacity: 100;
+    width: 140%;
+    transition: opacity 0.5s;
+    transform: translate(-15%, -0%);
+}
+
+.box04 .slider-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.box04 .slider-controls {
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 999;
+}
+
+.box04 .slider-controls label {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.671);
+    font-size: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.slider-controls label:hover,
+#slider-control-1:checked~.slider-controls label:nth-child(1),
+#slider-control-2:checked~.slider-controls label:nth-child(2),
+#slider-control-3:checked~.slider-controls label:nth-child(3),
+#slider-control-4:checked~.slider-controls label:nth-child(4),
+#slider-control-5:checked~.slider-controls label:nth-child(5) {
+    background-color: #ffffffb6;
+}
+
+
+/* article 05 */
+
+.box05>:nth-child(1) {
+    text-align: left;
+  
+}
+
+.box05>:nth-child(1) h3 {
+    padding-left: 5%;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.box05>:nth-child(1) section div>:first-child {
+    font-weight: 500;
+    padding-top: 30px;
+    margin-bottom: 4px;
+    font-size: 1.5em;
+
+}
+
+
+
+.box05>:nth-child(1) section div>:nth-child(2) {
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.box05>:nth-child(1) section div>:nth-child(3) {
+    font-size: 0.9em;
+}
+
+.box05>:nth-child(1) {
+    overflow: hidden;
+}
+
+.box05>:nth-child(1)>:nth-child(1) {
+    background: url(https://www.acebed.com/common/images/main-bottom-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    filter: grayscale(90%);
+    transition: 0.4s;
+}
+
+.box05>:nth-child(1)>:nth-child(1):hover,
+.box05>:nth-child(1)>:nth-child(2):hover {
+    filter: grayscale(0%);
+    width: 110%;
+}
+
+
+
+.box05>:nth-child(1)>:nth-child(2) {
+    background: url(https://www.acebed.com/common/images/all-menu-visual4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    filter: grayscale(90%);
+    transition: 0.5s;
+}
+
+/* footer start */
+
+footer {
+    background-color: #ecebe7;
+}
+
+
+footer>:nth-child(1)>:first-child {
+    margin-top: 50px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(3) {
+    display: none;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    color: #232323;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div img {
+    width: 15px;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div img:hover {
+    transform: rotate(90deg);
+}
+
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div h3 {
+    font-weight: 800;
+    font-size: 1.3em;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(2) {
+    display: flex;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(2) h3 {
+    font-size: 1em;
+    margin-top: 40px;
+    margin-right: 10px;
+
+
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(3) {
+    color: rgba(36, 131, 233, 0.877);
+    font-weight: 800;
+}
+
+footer>:last-child {
+    color: rgba(223, 223, 223, 0.818);
+    background-color: #33251fea;
+    padding: 20px 0;
+    padding-bottom: 60px;
+}
+
+footer>.main-m>:last-child {
+    font-size: 0.9em;
+    margin: 20px 0;
+    color: #686868;
+}
+
+footer>:last-child h3 {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+/* pc start */
+
+
+@media screen and (min-width: 700px) {
+
+
+/*pc main slider */
+
+
+    .main {
+        height: 950px;
+        width: 100%;
+        position: relative;
+    }
+
+    .center {
+        height: 80%;
+        width: 70%;
+        position: absolute;
+        left: 21.5%;
+        top: 51%;
+        transform: translate(0%, -50%);
+    }
+
+    .imgContainer {
+        overflow: hidden;
+        position: absolute;
+        width: 0%;
+        height: 800px;
+        left: -2%;
+    }
+
+    .imgContainer img {
+        height: 90%;
+        width: 1350px;
+        text-align: right;
+
+    }
+
+    .heading {
+        overflow: hidden;
+        height: 100px;
+        width: 1000px;
+        z-index: 2;
+        position: absolute;
+        top: 20%;
+        left: -55px;
+
+    }
+
+    .heading h1 {
+        position: absolute;
+        font-size: 6em;
+        top: 100px;
+        font-family: 'Cinzel', serif;
+        font-weight: 100;
+    }
+
+    .lines {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        position: absolute;
+        left: -200px;
+        top: 0.5%;
+    }
+
+    .line {
+        height: 150px;
+        width: 3px;
+        background-color: #d3d3d3;
+    }
+
+    .line.active {
+        background-color: #000;
+    }
+
+
+    .textContainer {
+        position: absolute;
+        width: 800px;
+        height: 50px;
+        overflow: hidden;
+        padding: 10px;
+        top: 48%;
+        left: -60px;
+        z-index: 3;
+    }
+
+
+
+    .text {
+        position: absolute;
+        top: -80%;
+        color: #000;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.3em;
+        padding-top: 18px;
+        font-weight: 300;
+    }
+
+
+    .imgContainer::before {
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .icons {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        font-size: 20px;
+        gap: 20px;
+        right: 6%;
+        bottom: 20%;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 1366px) {
+
+    .top-b {
+        padding: 25px 20px;
+        border-radius: 50%;
+        z-index: 999;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.534);
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+
+        font-size: 3rem;
+        line-height: 5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        text
+    }
+
+    h2 {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 2.2rem;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-family: 'Pretendard-Regular';
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    h4 {
+        font-family: 'Pretendard-Regular';
+        font-size: 1.5rem;
+        line-height: 1.1rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+        line-height: 0.7rem;
+    }
+
+    .pc-header {
+        display: flex;
+        margin-left: 10%;
+        align-items: center;
+        width: 70%;
+        padding-top: 20px;
+
+    }
+
+    .pc-header>:nth-child(1) {
+        margin-right: 80px;
+    }
+
+
+
+    .pc-header>:nth-child(1) img {
+        width: 150px;
+
+    }
+
+
+    .pc-header>:nth-child(2) {
+        display: flex;
+
+    }
+
+
+
+    .pc-header>:nth-child(2) h3 {
+        margin-top: 10px;
+        margin-right: 45px;
+        font-size: 1.3em;
+        font-weight: 900;
+        position: relative;
+        padding-bottom: 8px;
+    }
+
+    .pc-header>:nth-child(2) h3:after {
+        background: none repeat scroll 0 0 transparent;
+
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2.5px;
+        left: 50%;
+        position: absolute;
+        background: #0890c0;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+
+    }
+
+    .pc-header>:nth-child(2) h3:hover:after {
+        width: 100%;
+        left: 0;
+
+    }
+
+    .m-header>:nth-child(2) {
+        display: none;
+    }
+
+
+
+    .m-header {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        background-color: rgba(255, 255, 255, 0.452);
+        text-align: center;
+        z-index: 500;
+        box-shadow: 0px 0px 5px 0.1px rgba(0, 0, 0, 0.322);
+    }
+
+
+
+    .m-header>.search {
+        width: 25px;
+        position: absolute;
+        top: 45%;
+        right: 10%;
+        transform: translatey(-50%);
+        z-index: 999;
+    }
+
+
+    .m-menu-btn {
+        display: none;
+    }
+
+
+    .join {
+        display: block;
+        width: 28px;
+        height: 25px;
+        position: absolute;
+        top: 30%;
+        right: 13.5%;
+    }
+
+
+    .m-header>.mobile-mask {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: transparent;
+        background-size: cover;
+        z-index: -5;
+        transition: height .3s;
+
+    }
+
+
+    /* 모바일 서치 온 */
+    .m-header>.m-search-on {
+        position: relative;
+        top: -1030%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        visibility: hidden;
+        opacity: 0;
+        width: 100%;
+        height: 10vh;
+        background: url(https://www.acebed.com/common/images/head-visual-furniture1.jpg) no-repeat;
+        background-size: cover;
+        padding: 10% 0%;
+        overflow: hidden;
+    }
+
+    .search-b {
+        z-index: -1;
+        position: absolute;
+        top: 0%;
+        left: 30%;
+        width: 1500px;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    .m-header>.m-search-on.active {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility .5s, opacity 1s;
+    }
+
+    .m-header>.m-search-on>.m-search-box {
+        position: fixed;
+        border-bottom: 1px solid #000000af;
+        top: 60%;
+        left: 30%;
+        width: 50%;
+        margin-left: 100px;
+
+    }
+
+    .m-header>.m-search-on>.m-search-box>input {
+        width: 90%;
+        height: 46px;
+        border: none;
+        padding: 0 20px;
+        font-size: 1.2em;
+    }
+
+    .m-header>.m-search-on>.m-search-box>input::placeholder {
+        color: rgba(0, 0, 0, 0.795);
+    }
+
+    .m-header>.m-search-on>.m-search-box>.img-box {
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translatey(-50%);
+        filter: none;
+    }
+
+    .m-header>.m-search-on>.m-recommend-word {
+        display: none;
+
+    }
+
+    main .slide-wrap {
+        display: none;
+    }
+
+    /*pc slider start*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap');
+
+
+    main>:nth-child(3) {
+        display: block;
+    }
+
+    /*pc article01 start*/
+
+
+    .box01 {
+        background-color: rgb(236, 234, 230);
+        position: relative;
+        padding: 100px 10%;
+
+
+    }
+
+    .box01>:first-child {
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .box01>:nth-child(2) {
+        margin-left: 100px;
+        margin-top: -50px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        width: 85%;
+        line-height: 1.8em;
+        letter-spacing: -0.04em;
+        margin-bottom: 50px;
+        font-size: 1.5em;
+    }
+
+    .box01>:nth-child(2)>:nth-child(1),
+    .box01>:nth-child(2)>:nth-child(3) {
+        display: none;
+    }
+
+
+
+
+    .tab_container {
+        z-index: 10;
+    }
+
+
+    .tab_container .tab_content {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .tabs ul {
+        width: 90%;
+        display: table;
+        table-layout: fixed;
+        padding: 0;
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+
+
+    .tabs li {
+        display: inline-flex;
+        padding-right: 20px;
+    }
+
+    .tabs li.active a {
+        color: #000000;
+        padding-bottom: 5px;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+
+    .tabs li a {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        text-decoration: none;
+        color: rgb(75, 75, 75);
+        font-weight: 100;
+        font-size: 1.5em;
+    }
+
+
+
+
+
+    /* submenu */
+
+    .tab_content {
+        overflow: hidden;
+    }
+
+    .tab_content>:first-child {
+        width: 70%;
+        height: 80%;
+        overflow: hidden;
+
+        margin-top: -20px;
+    }
+
+    .tab_content>:first-child img {
+        width: 180%;
+    }
+
+    .tab_content h1 {
+        width: 100%;
+        margin-top: -130px;
+        margin-left: -50px;
+        letter-spacing: 0.1em;
+        font-weight: 900;
+        font-size: 120px;
+        text-align: right;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #271307;
+    }
+
+    .tab_content>:nth-child(2)>:nth-child(2) {
+        margin: 0 auto;
+        width: 70%;
+        height: 650px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 120px;
+
+    }
+
+    .tab_content>:nth-child(2)>:nth-child(2) img {
+        width: 160%;
+        position: absolute;
+        left: -60%;
+
+        height: 700px;
+
+    }
+
+    .tab_content h3 {
+
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 300;
+        width: 60%;
+        line-height: 1.8em;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .tab_content>:nth-child(3) {
+        margin-top: 80px;
+        width: 70%;
+        line-height: 1.5em;
+        letter-spacing: -0.02em;
+        font-weight: 300;
+        font-size: 1.3em;
+    }
+
+
+
+
+    .tab_content>:nth-child(5) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        border-top: 1px solid rgba(0, 0, 0, 0.705);
+        cursor: pointer;
+        text-align: center;
+        padding: 0px;
+        width: 50%;
+
+    }
+
+    .style-b h3 {
+        font-weight: 400;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 1.2em;
+        width: 500%;
+
+
+    }
+
+    /*인테리어 스타일제안 */
+
+    .tab_content>:nth-child(5) {
+        display: none;
+    }
+
+
+
+
+
+    .box02 {
+        text-align: center;
+        background-color: rgb(247, 245, 242);
+        background: url(https://www.acebed.com/common/images/spring-sec-bg1-m.jpg) no-repeat;
+        background-size: cover;
+        padding: 60px 10%;
+    }
+
+    .box02 h1 {
+        margin: 0 auto;
+        padding-top: 80px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .box02 h3 {
+        position: absolute;
+        top: 10px;
+        font-size: 6em;
+        width: 100%;
+        margin: 0 auto;
+        font-weight: 900;
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+        color: #c7c7c748;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-style: italic;
+    }
+
+
+
+    .box02 h2 {
+        color: rgb(0, 0, 0);
+        font-size: 1.5em;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 90%;
+        text-align: center;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 1.5em;
+        font-weight: 300;
+    }
+
+    .box02 p {
+        font-family: 'Noto Sans KR', sans-serif;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 0px;
+        font-size: 1.3em;
+        font-weight: 300;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    .box02 button {
+        background: transparent;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        width: 15%;
+        height: 50px;
+        margin: 50px 0;
+    }
+
+    .box02 span {
+        font-weight: 500;
+        color: #000000ec;
+    }
+
+
+    .mypage-b div {
+        width: 48%;
+    }
+
+
+
+    .box02 button:hover {
+        color: white;
+        background-color: black;
+    }
+
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: transparent;
+        opacity: 0.5;
+        padding: 0px 100px;
+        border-radius: 50%;
+        color: #313131 !important;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-size: 1.5rem !important;
+        font-weight: 600 !important;
+    }
+
+    .box02 .video01 {
+        margin-top: 20px;
+        width: 70%;
+        height: 500px;
+        
+
+    }
+
+    .box02 video {
+        margin-top: 20px;
+        width: 60%;
+        height: 100%;
+        padding: 30px 0;
+        max-width: 600px;
+    }
+
+
+
+    
+/* article 03 start */
+
+.box03 {
+    margin: 60px 0;
+    padding: 80px 10%;
+    position: relative;
+}
+
+.box03 h1 {
+
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box03-g {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    z-index: 1;
+}
+
+
+
+.event-wrapper {
+    display: none;
+}
+
+.event div {
+    display: none;
+}
+
+.event-wrapper01 {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.event01 {
+    display: flex;
+}
+
+.event01 img {
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+
+}
+
+.event01 p {
+    position: absolute;
+    top: 80%;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+
+/*article 04 start*/
+
+.box04 {
+    position: relative;
+
+}
+
+
+.box04 h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box04 h3 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    line-height: 1.6em;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.box04-s {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.box04 .section01 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(226, 226, 226, 0.692);
+    margin: 0 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box04 .section01:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075), 0 10px 10px rgba(0, 0, 0, 0.089);
+}
+
+.box04 .section01 img {
+    width: 100px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+.box04 .section01 h3 {
+    padding-top: 50px;
+    margin-left: 0%;
+    font-weight: 400;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 3px;
+}
+
+
+.box04>:nth-child(4) {
+    margin-bottom: 80px;
+}
+
+
+
+.box04 .visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    /* added line */
+}
+
+.box04 .slider {
+    position: relative;
+    max-width: 800px;
+    padding: 0 15px;
+    margin: 30px auto;
+}
+
+.box04 .slider-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    width: 100%;
+    height: 550px;
+}
+
+.box04 .slider-item {
+    max-width: 150%;
+    opacity: 0;
+    width: 0%;
+    flex-shrink: 0;
+    z-index: 1;
+    transition: opacity 1s;
+}
+
+
+
+
+#slider-control-1:checked~.slider-list .slider-item:nth-child(1),
+#slider-control-2:checked~.slider-list .slider-item:nth-child(2),
+#slider-control-3:checked~.slider-list .slider-item:nth-child(3),
+#slider-control-4:checked~.slider-list .slider-item:nth-child(4),
+#slider-control-5:checked~.slider-list .slider-item:nth-child(5) {
+    opacity: 100;
+    width: 50%;
+    transition: opacity 0.5s;
+    transform: translate(0%);
+
+}
+
+.box04 .slider-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  
+}
+
+.box04 .slider-controls {
+    position: absolute;
+    top: 89%;
+    left: 45%;
+    transform: translateX(0%);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.box04 .slider-controls label {
+    width: 15px;
+    height: 15px;
+    margin: 10px 10px;
+    border-radius: 50%;
+    background-color: rgba(66, 66, 66, 0.705);
+    font-size: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.slider-controls label:hover,
+#slider-control-1:checked~.slider-controls label:nth-child(1),
+#slider-control-2:checked~.slider-controls label:nth-child(2),
+#slider-control-3:checked~.slider-controls label:nth-child(3),
+#slider-control-4:checked~.slider-controls label:nth-child(4),
+#slider-control-5:checked~.slider-controls label:nth-child(5) {
+    background-color: #ffffffb6;
+}
+
+
+
+
+.box05>:nth-child(1) {
+    text-align: left;
+    cursor: pointer;
+   width: 50%;
+   height: 100%;
+   float: right;
+   margin-top: -550px;
+}
+
+.box05>:nth-child(1) h3 {
+    padding-left: 5%;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.5em;
+    
+}
+
+.box05>:nth-child(1) section div>:first-child {
+    font-weight: 500;
+    padding-top: 30px;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+}
+
+
+
+.box05>:nth-child(1) section div>:nth-child(2) {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+
+}
+
+.box05>:nth-child(1) section div>:nth-child(3) {
+    font-size: 1.3em;
+}
+
+.box05>:nth-child(1) {
+    overflow: hidden;
+}
+
+.box05>:nth-child(1)>:nth-child(1) {
+    background: url(https://www.acebed.com/common/images/main-bottom-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 275px;
+    filter: grayscale(90%);
+    transition: 0.4s;
+}
+
+.box05>:nth-child(1)>:nth-child(1):hover,
+.box05>:nth-child(1)>:nth-child(2):hover {
+    filter: grayscale(0%);
+    width: 111%;
+}
+
+
+.box05>:nth-child(1)>:nth-child(2) {
+    background: url(https://www.acebed.com/common/images/all-menu-visual4.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 275px;
+    filter: grayscale(90%);
+    transition: 0.5s;
+}
+
+
+
+footer {
+    padding-top: 80px;
+   
+}
+
+
+footer>:nth-child(1)>:first-child {
+    margin-top: 0px;
+    width: 180px;
+    margin-bottom: 10px;
+    float: right;
+    
+    
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) img {
+    display: none;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(3) {
+    display: none;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div {
+    display: inline-flex;
+    align-items: center;
+    height: 50px;
+    margin: 10px 0;
+    border:none;
+    cursor: pointer;
+    color: #232323;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div:hover {
+    border:none;
+
+}
+
+
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(1) div h3 {
+ 
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-right: 50px;
+    color: black;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(2) {
+    display: flex;
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(2) h3 {
+    font-size: 1.2em;
+    margin-top: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+footer>:nth-child(1)>:nth-child(2)>:nth-child(2)>:nth-child(3) {
+    color: rgba(36, 131, 233, 0.877);
+    font-weight: 800;
+}
+
+footer>:last-child {
+    color: rgba(223, 223, 223, 0.818);
+    background-color: #33251fea;
+    padding: 20px 0;
+    padding-bottom: 120px;
+}
+
+footer>.main-m>:last-child {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #686868;
+}
+
+footer>:last-child h3 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+
+
+}

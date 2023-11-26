@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+/*메인한글폰트 font-family: 'Pretendard-Regular'; ,sub 한글폰트
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+article {
+    margin-top: 200px;
+
+
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    
+}
+
+h2 {
+
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.join-us h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.join-us h4 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: black;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: 1.05rem;
+    line-height: 3rem;
+    border: 1px solid #dddddd3f;
+    margin: 7px 0;
+    padding: 2px 5px;
+    font-weight: 100;
+}
+
+.blue-btn {
+    background: #0890c8;
+    color: white;
+    font-weight: 300;
+}
+
+.blue-btn:hover {
+    box-shadow: 1px 1px 4px #cccccc;
+    transition: 0.4s;
+}
+
+.gray-btn {
+    background: #ebebeb;
+    color: rgb(0, 0, 0);
+}
+
+.gray-btn:hover {
+    background-color: rgb(116, 116, 116);
+    color: white;
+    transition: 0.3s;
+}
+
+.white-btn {
+    background: none;
+    color: black;
+    width: 100%;
+    font-weight: 300;
+    border: 1px solid #cccccc;
+}
+
+.white-btn:hover {
+    box-shadow: 1px 1px 4px #cccccc;
+    transition: 0.5s;
+    background-color: rgba(235, 235, 235, 0.822);
+}
+
+
+
+.content-box {
+    border: 1px solid #dfdfdf;;
+    border-radius: 0px;
+    margin: 50px 5%;
+    padding: 50px 30px;
+}
+
+.essential::after {
+    content: '*';
+    color: #0890c8;
+}
+
+hr {
+    border-bottom: 1px solid #cccccc;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin: 7px auto;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+
+
+img {
+    width: 17px;
+    margin-right: 10px;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+article>:nth-child(1) {
+    border-bottom: 0px solid #bebebe70;
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+}
+
+
+/* 링크 기본값 */
+
+
+
+/*mobile*/
+
+
+
+
+.join-us .content-box {
+    position: relative;
+}
+
+.join-us .content-box p {
+    margin-top: 30px;
+}
+
+.join-us .content-box>:nth-child(3),
+.join-us .content-box>:nth-child(13) {
+    display: flex;
+}
+
+.join-us .content-box>:nth-child(3) input {
+    width: 73%;
+    margin-right: 2%;
+}
+
+.join-us .content-box>:nth-child(3) button {
+    width: 25%;
+}
+
+.join-us .content-box>:nth-child(13) input {
+    width: 61%;
+    margin-right: 2%;
+}
+
+.join-us .content-box>:nth-child(13) button {
+    width: 37%;
+}
+
+.join-us .content-box img {
+    position: absolute;
+    width: 30px;
+    right: 30px;
+    top: 760px;
+}
+
+.join-us .content-box>:nth-child(15):hover {
+    background: #eeeeee;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.join-us .content-box .birth div {
+    display: flex;
+    border: 1px solid #cccccc;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin: 5px auto;
+    padding-left: 20px;
+}
+
+.join-us .content-box .birth div select {
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.join-us .content-box .birth div>:nth-child(2),
+.join-us .content-box .birth div>:nth-child(3) {
+    padding-left: 30px;
+}
+
+.join-us .content-box .agree input {
+    width: 20px;
+}
+
+.join-us .content-box .agree>:nth-child(3) {
+    width: 100%;
+}
+
+.join-us .content-box .agree .checkbox_group div>:nth-child(3):hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+.join-us>:nth-child(3) div {
+    color: #5a5a5a;
+    line-height: 1.5em;
+}
+
+.join-us>:nth-child(4)>:nth-child(2) {
+    height: 300px;
+    border: 1px solid #ddd;
+    overflow-y: scroll;
+    background: #eeeeee;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.join-us>:nth-child(4)>:nth-child(3) {
+    margin: 20px;
+    font-size: 0.85rem;
+}
+
+.join-us>:nth-child(4)>:nth-child(4) {
+    width: 100%;
+}
+
+.join-us>:nth-child(5) {
+    text-align: center;
+}
+
+
+/* .join-us>:nth-child(5) p{
+  text-align:center !important;  
+} */
+
+.join-us>:nth-child(5) button {
+    width: 45%;
+}
+
+.join-us img {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 1366px) {
+    .content-box {
+        width: 600px;
+        margin: 70px auto;
+    }
+
+    .content-box h3 {
+        font-size: 1.3em;
+    }
+
+    
+
+    .join-us .join {
+        display: block;
+        width: 28px;
+        height: 25px;
+        position: absolute;
+        top: 30%;
+        right: 13.5%;
+    }
+
+
+    .m-header>.mobile-mask {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: transparent;
+        background-size: cover;
+        z-index: -5;
+        transition: height .3s;
+
+    }
+
+
+    /* 모바일 서치 온 */
+    .m-header>.m-search-on {
+        position: relative;
+        top: -1030%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        visibility: hidden;
+        opacity: 0;
+        width: 100%;
+        height: 10vh;
+        background: url(https://www.acebed.com/common/images/head-visual-furniture1.jpg) no-repeat;
+        background-size: cover;
+        padding: 10% 0%;
+        overflow: hidden;
+    }
+
+    .search-b {
+        z-index: -1;
+        position: absolute;
+        top: 0%;
+        left: 30%;
+        width: 1500px;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    .m-header>.m-search-on.active {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility .5s, opacity 1s;
+    }
+
+    .m-header>.m-search-on>.m-search-box {
+        position: fixed;
+        border-bottom: 1px solid #000000af;
+        top: 60%;
+        left: 30%;
+        width: 50%;
+        margin-left: 100px;
+
+    }
+
+    .m-header>.m-search-on>.m-search-box>input {
+        width: 90%;
+        height: 46px;
+        border: none;
+        padding: 0 20px;
+        font-size: 1.2em;
+    }
+
+    .m-header>.m-search-on>.m-search-box>input::placeholder {
+        color: rgba(0, 0, 0, 0.795);
+    }
+
+    .m-header>.m-search-on>.m-search-box>.img-box {
+        width: 20px;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        transform: translatey(-50%);
+        filter: none;
+    }
+
+    .m-header>.m-search-on>.m-recommend-word {
+        display: none;
+
+    }
+
+    main .slide-wrap {
+        display: none;
+    }
+
+}

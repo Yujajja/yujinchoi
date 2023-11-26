@@ -1,0 +1,832 @@
+@charset "utf-8";
+
+/*메인한글폰트 font-family: 'Pretendard-Regular'; ,sub 한글폰트
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    word-break: keep-all;
+    outline: 0px solid silver;
+}
+
+.puimg {
+    width: 300px;
+}
+
+video {
+    width: 300px;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 0.9rem;
+    line-height: 1rem;
+    letter-spacing: 0.1px;
+
+}
+
+.main-m {
+    margin: 0 4%;
+}
+
+
+
+a:link {
+    color: #666;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #383838;
+}
+
+
+a:active {
+    color: none;
+}
+
+.purchase button {
+    background: transparent;
+    color: #444;
+    border: 1px solid #444;
+    padding: 10px;
+}
+
+ button:hover {
+    color: black;
+    background-color: white;
+}
+
+hr {
+    border: none;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.151);
+}
+
+/*mobile start */
+
+.purchase h3 {
+    font-family: 'Pretendard-Regular';
+    width: 90%;
+    margin: 0 auto;
+
+    font-size: 1.65em;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+}
+
+.purchase h4 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #444;
+}
+
+.purchase p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: #444;
+}
+
+.purchase main {
+    text-align: center;
+}
+
+.purchase .main-t {
+    margin-top: 100px;
+}
+
+.purchase .main-t h4 {
+    margin-bottom: 20px;
+}
+
+.purchase .main-t h3 {
+    letter-spacing: 0.08em;
+    margin-bottom: 70px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 3em;
+}
+
+.purchase .main-i {
+    margin: 0 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.purchase .main-i img {
+    width: 21px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+
+/*main image*/
+
+
+
+.purchase .zoom-area {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+    cursor: none
+}
+
+/* for create magnify glass */
+.purchase .large {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    border-radius: 100%;
+
+    /* for box shadow for glass effect */
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+        0 0 7px 7px rgba(75, 18, 18, 0.25),
+        inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+    /*for hide the glass by default*/
+    display: none;
+}
+
+.purchase .small {
+    display: block;
+    width: 100%;
+}
+
+.main-t2 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-t2 h3 {
+    margin-top: 70px;
+}
+
+.main-t2>:nth-child(2) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-t2 h4 {
+    font-weight: lighter;
+    line-height: 1.5em;
+    letter-spacing: -0.04em;
+}
+
+.main-t2 h4 span {
+    font-weight: 400;
+}
+
+.main-t2 div {
+    display: flex;
+    justify-content: center;
+}
+
+.main-t2 div p {
+    margin: 50px 5px;
+    border: 1px solid #44444494;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 80px;
+}
+
+.main-t3 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-t3 section {
+    width: 50%;
+    padding: 0 5%;
+    margin-bottom: 25px;
+
+}
+
+
+.main-t3>:nth-child(1),
+.main-t3>:nth-child(3),
+.main-t3>:nth-child(5) {
+    border-right: 1px solid rgba(0, 0, 0, 0.352);
+}
+
+
+
+
+.main-t3 img {
+    width: 23px;
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.main-t3 section>:first-child {
+    display: flex;
+    width: 100%;
+
+}
+
+
+.main-t3 section>:nth-child(2) {
+    text-align: left;
+}
+
+
+
+
+.main-t3 section>:nth-child(2) div {
+    display: flex;
+}
+
+.main-t3 section>:nth-child(1) h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+
+}
+
+.main-t3 section>:nth-child(2) div h4 {
+    margin: 8px 0;
+    color: #444;
+}
+
+.main-t3 h4 {
+    font-weight: 400;
+}
+
+
+.main-t3 .bold {
+    font-weight: 900;
+    padding-right: 10px;
+}
+
+.main-t3>:last-child>:nth-child(2) {
+    display: flex;
+
+}
+
+.color {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #444;
+    background-color: #613e09;
+    margin-right: 10px;
+}
+
+.main-b {
+
+    display: none;
+}
+
+
+
+.detail01-mo {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.detail01-mo img {
+    width: 100%;
+}
+
+
+.detail01-pc {
+    display: none;
+}
+
+.detail-ppc {
+    display: none;
+}
+
+
+/* 모바일 디테일 슬라이드 */
+
+.detail-pmo {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-container {
+    height: 400px;
+    display: inline-flex;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+}
+
+.slide {
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    user-select: none;
+}
+
+.slide img {
+    height: 80%;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.grabbing .slide img {
+    transform: scale(0.9);
+}
+
+.set {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.set h3 {
+    letter-spacing: 0.08em;
+    margin-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.set h4 {
+    margin-top: 20px;
+    font-weight: 100;
+    margin-bottom: 50px;
+
+}
+
+.set img {
+    width: 90%;
+    margin: 30px 0;
+}
+
+.set section {
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+}
+
+.set .color {
+    margin: 0 auto;
+    margin-top: -30px;
+}
+
+.review {
+    width: 90%;
+    margin: 0 auto;
+
+    padding-bottom: 80px;
+}
+
+.review h3 {
+    text-align: center;
+    letter-spacing: 0.08em;
+    margin-top: 40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.review>:nth-child(2) {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review>:nth-child(2) h4 {
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.review>:nth-child(2) h4 span {
+    font-weight: 600;
+}
+
+.review section {
+    width: 45%;
+    overflow: hidden;
+}
+
+
+.review section>:first-child {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.review section>:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review section h4 {
+    font-size: 0.9em;
+    margin-top: 20px;
+    font-weight: 300;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.map {
+    margin: 100px 0;
+    padding-bottom: 150px;
+
+}
+
+.map h4 {
+    color: white;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.2em;
+}
+
+.map>:first-child {
+    background-color: #0890c0;
+    width: 90%;
+    height: 170px;
+    float: right;
+    align-items: center;
+}
+
+
+
+.map>:first-child img {
+    width: 20px;
+    height: 20px;
+}
+
+.map>:first-child>:nth-child(1) {
+    margin: 45px;
+    width: 35%;
+}
+
+
+.map>:first-child>:nth-child(1)>:nth-child(2) {
+    display: flex;
+    width: 110%;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    margin-top: 20px;
+}
+
+.map>:first-child>:nth-child(1)>:nth-child(2) img {
+    width: 19px;
+    height: 19px;
+    margin-bottom: 5px;
+}
+
+.map>:first-child>:first-child>:nth-child(2) input {
+    background-color: transparent;
+    border: none;
+
+}
+
+.map>:first-child>:first-child>:nth-child(2) input::placeholder {
+    color: rgba(255, 255, 255, 0.555);
+}
+
+
+
+
+
+
+
+
+body>:last-child {
+    padding: 20px 15px;
+    border-radius: 50%;
+
+    z-index: 999;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+body>:last-child a {
+    color: black;
+}
+
+
+@media screen and (min-width: 700px) {
+
+
+
+
+    .detail01-mo {
+        display: none;
+    }
+
+
+    .detail01-pc {
+        display: block;
+
+    }
+
+    .detail01-pc {
+        width: 100%;
+        margin-top: 400px;
+    }
+
+    .detail01-pc img {
+        width: 100%;
+    }
+
+
+    .detail-pmo {
+        display: none;
+    }
+
+    .detail-ppc {
+        display: block;
+        margin-top: 250px;
+    }
+
+    .detail-ppc img {
+        width: 75%;
+        margin-bottom: 150px;
+    }
+
+    .detail-ppc>:nth-child(2) {
+        text-align: right;
+    }
+
+    .detail-ppc>:nth-child(3) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .detail-ppc>:nth-child(3) img {
+        margin: 0 4%;
+        width: 42%;
+        
+    }
+
+    .set {
+        margin-top: 200px;
+    }
+
+    main {
+        position: relative;
+    }
+
+  
+
+    .main-b {
+        position: absolute;
+        display: block;
+        width: 80%;
+        height: 200px;
+        top: 105%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-b img {
+        text-align: center;
+        width: 100%;
+    }
+
+    
+
+.review {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding-bottom: 80px;
+}
+
+    .review section {
+        width: 25%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+
+
+    .map {
+        height: 500px;
+        margin: 100px 0;
+        padding-bottom: 150px;
+        background:url(https://www.acebed.com/common/images/store-map.jpg);
+        text-align: center;
+    
+    }
+    
+    .map h4 {
+        color: white;
+        font-weight: 400;
+        font-family: 'Noto Sans KR', sans-serif;
+        line-height: 1.2em;
+    }
+    
+    .map>:first-child {
+        background-color: #0890c0;
+        width: 40%;
+        height: 300px;
+        float: right;
+        align-items: center;
+    }
+    
+    
+    
+    .map>:first-child img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .map>:first-child>:nth-child(1) {
+        margin: 80px;
+        width: 65%;
+    }
+    
+    
+    .map>:first-child>:nth-child(1)>:nth-child(2) {
+        display: flex;
+        width: 110%;
+        justify-content: space-between;
+        border-bottom: 3px solid white;
+        margin-top: 50px;
+    }
+    
+    .map>:first-child>:nth-child(1)>:nth-child(2) img {
+        width: 19px;
+        height: 19px;
+        margin-bottom: 5px;
+    }
+    
+    .map>:first-child>:first-child>:nth-child(2) input {
+        background-color: transparent;
+        border: none;
+    
+    }
+    
+    .map>:first-child>:first-child>:nth-child(2) input::placeholder {
+        color: rgba(255, 255, 255, 0.555);
+    }
+    
+
+
+
+    
+    .purchase h3 {
+    font-family: 'Pretendard-Regular';
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3em;
+ 
+
+}
+
+.purchase h4 {
+
+    font-size: 1.5em;
+
+}
+
+.purchase p {
+    font-size: 1.2em;
+}
+
+
+
+.main-t h4 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.main-t h3 {
+    letter-spacing: 0.1em;
+    font-size: 4.5em;
+}
+
+.main-i {
+    margin: 0 5%;
+    display: flex;
+    justify-content: end;
+}
+
+.main-i img {
+    width: 23px;
+    height: 22px;
+    margin-left: 35px;
+}
+
+
+
+.main-t3 h4 {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+
+.main-t3 .bold {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+.set h3, .review h3 {
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.set h4 {
+    line-height: 1.3em;
+}
+    
+
+
+.review {
+    width: 90%;
+    margin: 0 auto;
+
+    padding-bottom: 80px;
+}
+
+.review button {
+    font-size: 1.3em;
+    padding: 10px 30px;
+}
+
+
+
+.review>:nth-child(2) {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review>:nth-child(2) h4 {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+
+    .main-t3 {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+    }
+
+    .main-t3 section {
+        width: 16.65%;
+
+    }
+
+
+    .main-t3 section:not(.main-t3>:nth-child(6)) {
+        border-right: 1px solid rgba(0, 0, 0, 0.158);
+    }
+
+    
+.purchase .main-t h3 {
+    font-size: 3.5em;
+}
+
+}

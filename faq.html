@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>ace faq</title>
+    <link rel="stylesheet" href="posting.css">
+    <style type="text/css"></style>
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 스와이프 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--slick-->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+     <!-- 제이쿼리 불러오기 -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+</head>
+
+<body>
+ 
+    <header>
+
+        <div class="m-header">
+
+
+            <div class="pc-header">
+                <div>
+                    <img src="images/header-logo.png" alt="logo" href="index.html">
+                </div>
+                <div>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                    <a href="purchase.html">
+                        <h3>PURCHASE</h3>
+                    </a>
+                    <a href="login.html">
+                        <h3>LOGIN</h3>
+                    </a>
+                    <a href="joinus.html">
+                        <h3>JOINUS</h3>
+                    </a>
+                    <a href="remove.html">
+                        <h3>REMOVE</h3>
+                    </a>
+                    <a href="board.html">
+                        <h3>BOARD</h3>
+                    </a>
+                    <a href="qna.html">
+                        <h3>QNA</h3>
+                    </a>
+                    <a href="faq.html">
+                        <h3>FAQ</h3>
+                    </a>
+                    <a href="news.html">
+                        <h3>NEWS</h3>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+            <a href="index.html" class="logo img-box block">
+                <img src="images/header-logo.png" alt="logo">
+            </a>
+            <a href="#" class="search img-box block">
+                <img src="https://www.dacorkorea.com/images/icon-search.png" alt="search">
+            </a>
+            <a href="joinus.html" class="join img-box block">
+                <img src="images/header-logo-join.png" alt="search">
+            </a>
+
+
+            <div class="m-menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mobile-mask"></div>
+
+
+
+            <div class="m-menu-list">
+
+                <ul>
+
+                    <li class="mypage">
+                        <div><a href="#">회원가입/로그인하기<div class="xi-angle-right"></div></a></div>
+                        <div><a href="#">회원가입 후 더 많은 혜택을 누리세요.</a></div>
+
+
+                    </li>
+
+    
+                    <li class="delay-1">
+                        <a href="index.html">HOME<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-2">
+                        <a href="purchase.html">PURCHASE<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-3">
+                        <a href="login.html">LOGIN<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-4">
+                        <a href="joinus.html">JOINUS<span class="cell-right"></span></a>
+                        <ul>
+                            <li><a href="remove.html">REMOVE</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="delay-5">
+                        <a href="board.html">BOARD<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-6">
+                        <a href="qna.html">QNA<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-7">
+                        <a href="faq.html">FAQ<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-8">
+                        <a href="news.html">NEWS<span class="cell-right"></span></a>
+                    
+                    </li>
+
+
+
+                    <li class="second-menu">
+                        <div><a href="#">추천 키워드</a></div>
+                        <div><a href="#">컬렉션</a></div>
+                        <div><a href="#">SNS</a></div>
+                        <div><a href="#">고객센터</a></div>
+                    </li>
+
+
+                    <li class="last-menu">
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-1.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-2.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-3.png">
+                        </div>
+                </ul>
+
+            </div>
+
+            <div class="m-search-on">
+                <div class="search-b"></div>
+                <div class="search-b"></div>
+                <div class="m-search-box">
+
+                    <input type="search" placeholder=" 제품 정보를 빠르게 찾아보세요">
+                    <a href="#" class="img-box block"><img src="images/header-m-search-on-icon.png"
+                            alt="search"></a>
+                </div>
+                <div class="m-recommend-word">
+                    <p><a href="#" class="block">추천 키워드</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#프레임</a></li>
+                        <li><a href="#" class="block delay-2">#1인용 리클라이너</a></li>
+                        <li><a href="#" class="block delay-3">#마이크로케어</a></li>
+                    </ul>
+
+                    <p><a href="#" class="block">인기 검색어</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#고객체험</a></li>
+                        <li><a href="#" class="block delay-2">#웨딩멤버스</a></li>
+                        <li><a href="#" class="block delay-3">#매장찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  
+  </header>
+
+
+  
+  <script>
+    
+
+    
+    // 상단 메뉴 관련
+    $('.header > .header-inner > .top-menu-bar > ul > li').mouseenter(function () {
+        $(this).addClass('active');
+        $(this).find('> a').addClass('active');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > li').mouseleave(function () {
+        $(this).removeClass('active');
+        $(this).find('> a').removeClass('active');
+    });
+
+    // 상단 2차 메뉴 배경
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-1').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '164px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-1').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-2').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '238px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-2').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-3').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '164px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-3').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-4').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '90px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-4').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-5').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '127px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-5').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+
+    // 서치 박스
+    $('.header > .header-inner > .search, .search-on > .search-inner > .close-btn ').click(function () {
+        $('.header > .header-inner > .search-on').toggleClass('active');
+    });
+
+    // 모바일 메뉴 버튼
+    $('.m-header > .m-menu-btn').click(function () {
+        if ($(this).hasClass('active')) {
+            $('html').removeClass('m-menu-scroll');
+
+            $(this).removeClass('active');
+            $(this).siblings('.mobile-mask').css('height', '');
+            $(this).siblings('.m-menu-list').removeClass('active');
+        }
+        else {
+            $('html').addClass('m-menu-scroll');
+
+            $('.m-header > .search > img').attr('src', 'https://www.dacorkorea.com/images/icon-search.png');
+            $('.m-header > .m-search-on').removeClass('active');
+
+            $(this).siblings('.m-menu-list').find(' > ul > li.active').removeClass('active');
+            $(this).siblings('.m-menu-list').find(' > ul > li > ul').slideUp(0);
+
+            $(this).addClass('active');
+            $(this).siblings('.mobile-mask').css('height', '100%');
+            $(this).siblings('.m-menu-list').addClass('active');
+        };
+    });
+
+    // 모바일 메뉴 리스트
+    $('.m-header > .m-menu-list > ul > li').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).find(' > ul').slideUp(300);
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).siblings('li.active').removeClass('active');
+            $(this).siblings().find(' > ul').slideUp(300);
+            $(this).find(' > ul').slideDown(300);
+            $(this).addClass('active');
+        }
+    });
+
+    $('.m-header > .m-menu-list > ul > li > ul').click(function (e) {
+        e.stopPropagation();
+    });
+
+    // 모바일 서치 온
+    $('.m-header > .search').click(function () {
+        if ($('.m-header > .m-search-on').hasClass('active')) {
+            $('html').removeClass('m-menu-scroll');
+
+            $(this).find(' > img').attr('src', 'https://www.dacorkorea.com/images/icon-search.png');
+            $(this).siblings('.mobile-mask').css('height', '');
+            $('.m-header > .m-search-on').removeClass('active');
+        }
+        else {
+            $('html').addClass('m-menu-scroll');
+
+            $('.m-header > .m-menu-btn').removeClass('active');
+            $(this).siblings('.m-menu-list').removeClass('active');
+
+            $(this).find(' > img').attr('src', 'https://www.dacorkorea.com/images/icon-search-close.png');
+            $(this).siblings('.mobile-mask').css('height', '100%');
+            $('.m-header > .m-search-on').addClass('active');
+        }
+    });
+
+
+</script>
+
+
+    <article class="qna-text">
+        <h1>FAQ</h1>
+    </article>
+
+
+    <article class="faq">
+
+        <ul class="listtap">
+            <li class="tapsee">전체<span>(1509)</span></li>
+            <li>제품문의<span>(3)</span></li>
+            <li>구매안내<span>(4)</span></li>
+            <li>AS안내<span>(3)</span></li>
+        </ul>
+        <section id="list1">
+            <div>
+                <div class="listq faq-q">
+                    <div>전체</div>
+                    <div>
+                        <p>투웨이(TWO-WAY)쿠션은 어떤건가요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>에이스침대의 모든 매트리스는 투웨이쿠션 공법이 적용되어 있습니다.
+
+                            예를 들어 ROYAL ACE GOLD 제품의 경우, 매트리스 한쪽면은 SOFT한 쿠션감을, 다른 면은 SUPER HARD의 쿠션감을 가지고 있습니다.
+
+                            이처럼 하나의 매트리스 상/하면에 서로 다른 느낌의 쿠션감을 제공하여 사용할 수 있도록하는것을 투웨이쿠션이라 합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>
+                            스마트 슬리브는 어떤 소재인가요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>SMART SLEEVE는 “X자 연결고리를 가진 독특한 중간층으로 이루어진 3D 직물입니다.
+
+                            외형은 그물망 구조의 형태로 시중에서 사용하는 매쉬소재와 유사한 구조이지만 탁월한 탄성과 공기투과력을 가진 3D 입체구조이면서도 뛰어난 부드러움과 실용적인 부피감을
+                            자랑하는 차별화된 소재입니다. 또한 SMART SLEEVE는 3D 입체구조를 기본으로 수면문제에 따라 처방된 물질을 수백만개의 캡슐에 담은 캡슐 포함형과 필름을
+                            처리한 방수필름 포함형 등 혁신적인 기술을 추가한 새로운 개념의 매트리스 보호커버입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>Stressless 제품을 홈페이지에서 볼 수 있나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>홈페이지 좌측 제품 카테고리의 Stressless 메뉴를 클릭하면 다양한 Stressless 제품을 확인할 수 있습니다. </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>가까운 대리점을 알고 싶은데요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>홈페이지 '매장안내' 메뉴를 클릭하시어 고객님과 가까운 위치의 매장을 확인할 수 있습니다.
+
+                            매장에 대한 주소, 연락처, 판매제품 등의 간략한 소개가 되어 있으며 방문하고자 하는 대리점을 선택하시면 됩니다.
+                            관심매장으로 설정할 수 있으며, 고객님이 설정하신 관심매장은 마이페이지- 관심 제품/매장 메뉴에서 다시 확인할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>홈페이지에 왜 가격이 안나와 있나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>홈페이지는 회사 소개 및 에이스 침대 제품의 특장점 위주로 만들어 졌습니다.
+                            제품 가격이 궁금하실 경우 홈페이지 메뉴 '매장안내'를 이용하여 원하는 대리점에 전화 또는 방문하시어 문의하시거나 에이스침대 인터넷 쇼핑몰에서 검색하실 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>웨딩멤버스 혜택 중에 결혼 증빙자료는 어떤 것이 있나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>예식장 계약서, 청첩장 등 회원명과 결혼예정일이 확인이 가능한 증빙 자료라면 어떠한 자료도 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="list2">
+            <div>
+                <div class="listq">
+                    <div>제품문의</div>
+                    <div>
+                        <p>
+                            [제품문의]스마트 슬리브는 어떤 소재인가요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>SMART SLEEVE는 “X자 연결고리를 가진 독특한 중간층으로 이루어진 3D 직물입니다.
+
+                            외형은 그물망 구조의 형태로 시중에서 사용하는 매쉬소재와 유사한 구조이지만 탁월한 탄성과 공기투과력을 가진 3D 입체구조이면서도 뛰어난 부드러움과 실용적인 부피감을
+                            자랑하는 차별화된 소재입니다. 또한 SMART SLEEVE는 3D 입체구조를 기본으로 수면문제에 따라 처방된 물질을 수백만개의 캡슐에 담은 캡슐 포함형과 필름을
+                            처리한 방수필름 포함형 등 혁신적인 기술을 추가한 새로운 개념의 매트리스 보호커버입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>제품문의</div>
+                    <div>
+                        <p>
+                            [제품문의]캡슐 포함형 제품은 세탁시 쉽게 기능이 저하되는 건 아닌가요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>캡슐 포함형 제품은 “X”자 연결고리를 가진 3D입체구조의 섬유조직과 캡슐의 결합으로 이루어집니다.
+
+                            수면문제 따라 각기 다른 기능을 가진 추출물로 채워진 수백만 개의 캡슐들이 3D섬유조직에 달라붙습니다. 신체와의 접촉을 통해 마찰이 발생되면 캡슐이 깨지고 포함되어
+                            있었던 추출물이 방출되어 그 기능을 발휘하기 시작합니다. 세탁에 의해서 어느 정도의 캡슐이 줄어들긴 하겠지만 워낙 많은 양의 캡슐이 포함되어있기 때문에 기능을
+                            발휘하는데 문제가 생길 만큼 쉽게 줄어들지는 않습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>제품문의</div>
+                    <div>
+                        <p>
+                            [제품문의]스마트슬리브 제품은 일반적으로 봐왔던 소재가 아닌 것 같은데 세탁은 어떻게 하여야 하나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>SMART SLEEVE는 높은 내구성과 실용적인 관리를 자랑합니다. 모든 제품은 40도의 온수에서 중성세제로 세탁이 가능합니다.
+
+                            단, 60도씨 이상의 온도에서는 원단의 수축이 발생될 수 있으므로 60도씨 이하의 온도를 권장하며 제품의 형태 변형을 최소화 하기 위하여 낮은강도의 탈수를
+                            권장합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="list3">
+            <div>
+                <div class="listq">
+                    <div>회원정보</div>
+                    <div>
+                        <p>
+                            [회원정보]웨딩멤버스 혜택 중에 결혼 증빙자료는 어떤 것이 있나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>예식장 계약서, 청첩장 등 회원명과 결혼예정일이 확인이 가능한 증빙 자료라면 어떠한 자료도 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>회원정보</div>
+                    <div>
+                        <p>
+                            [회원정보]웨딩멤버스 회원 가입 대상자는 어떻게 되나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>에이스침대 구매 예정이신 모든 예비신랑, 신부님이 가입이 가능하십니다.
+
+                            단, 최근 3개월 이내 구매(인증) 내역이 있으시거나, 결혼 예정일이 지난 고객님은 회원가입이 불가합니다</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>회원정보</div>
+                    <div>
+                        <p>
+                            [회원정보]웨딩멤버스 회원번호는 무엇인가요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>웨딩멤버스 고객님을 식별하는 고유 회원번호로 제품 구매 시 필히 판매원에게 제시해 주셔야 다양한 혜택을 받으실 수 있습니다</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="list4">
+            <div>
+                <div class="listq">
+                    <div>기타</div>
+                    <div>
+                        <p>[AS안내] 매트리스를 하루밖에 사용 안 했는데 왜 교환이 안되나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>에이스침대는 한 번 포장이 뜯기고 사용된 제품은 회사로 들어오지 못하게 되어있습니다.
+
+                            그 이유는 매트리스는 살이 직접 닿으며 사용하는 제품이므로 위생과도 직접적으로 관련이 있으며,
+                            품질에 대해서 고객님께 신뢰를 얻기 위한 노력 중의 하나로 이미 사용된 제품을 재활용하지 않는다는 것을 보여드리기 위함입니다.
+
+                            고객님께서 불편하실 것을 알지만 회사에서 엄격하게 금지하고 있는 부분이므로 고객님의 넓은 아량으로 이해해주시기 바랍니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>기타</div>
+                    <div>
+                        <p>
+                            [AS안내]마음에 안 들면 바꿔도 되나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>제품을 구입 하신 후 제품 불량 또는 변심에 의한 교환 등에 대해서는 소비자 피해 보상규정에 의한 절차에 따라 처리하게 됩니다.
+
+                            침대 품질불량(스프링, 매트리스 등)은 구입일로부터 10일 이내에 제품교환 또는 구입가 환불이 가능하고, 1년 이내에 부품 및 제품교환이 가능합니다. 선금 지불 후
+                            물품배달 전 소비자 귀책사유에 의한 해약 시는 선금에서 물품대금의 10%를 공제하고 환급해 드리게 됩니다.
+                            본사 또는 대리점의 귀책사유로 인한 해약사유가 발생 했을 때는 선금이 물품대금의 10%이하인 경우는 선금의 배액을 환불하여 드리고, 선금이 물품대금의 10%를
+                            초과하는 경우는 선금에 물품대금의 10%를 가산하여 환급하도록 되어있습니다.
+
+                            아시다시피 침대는 내구재로 제품의 부피가 크고 배송간에 많은 물류비가 소요 됩니다.
+                            따라서 대리점에서 고객만족을 위하여 이러한 비용을 감내한다면 물론 바꾸어도 관계가 없겠지만, 그래도 고객님께서는 제품을 구입하기 전에 충분한 제품에 대하여 검토한 후
+                            신중히 결정하시는 것이 좋겠습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>기타</div>
+                    <div>
+                        <p>
+                            [AS안내]침대 구입 후 A/S를 받으려고 하는데요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>에이스는 고객 만족을 위한 품질경영을 가장 중요하게 생각하고 있습니다.
+                            이에 에이스는 대리점 전산 시스템을 이용하여 구매한 고객의 기초자료를 관리하고 있으며 신속하고 정확하게 소비자 여러분의 욕구를 반영하고 있습니다.
+                            생산부터 A/S까지 최선을 다해 노력함으로써 고객 여러분께 최고의 만족을 제공해 드리기 위해서 입니다.
+
+                            침대구입 후 A/S를 받으시고자 한다면 완벽한 고객관리를 자랑하는 에이스침대의 고객만족센터에 연락해 주십시오.
+                            소비자 여러분의 불만과 문제점을 정확하게 파악, 완벽한 전산 시스템망을 통해 가장 빠르게 해결해 드릴 것입니다.
+
+                            에이스침대 고객만족 센터는 경기도 성남시 중원구 상대원동 142-6번지에 위치하고 있으며, 전화는 (031)735-7121~2, 080-735-7123 입니다.
+                            또한 A/S를 원하신다면 본사 고객만족센터나 가까운 대리점으로 언제라도 연락해 주시기 바랍니다.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="faq-page">
+            <p class="faq-checkpage">1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+
+    </article>
+    <script>
+
+
+
+    // fqa 리스트 탭
+    window.addEventListener("load", function () {
+        const tapList = document.querySelectorAll(".listtap > li");
+        for (let i = 0; i < tapList.length; i++) {
+            tapList[i].addEventListener("click", function () {
+                cleartap();
+                this.classList.add("tapsee");
+                if (i == 0) {
+                    document.getElementById("list1").style.display = "block";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "none";
+                } else if (i == 1) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "block";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "none";
+                } else if (i == 2) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "block";
+                    document.getElementById("list4").style.display = "none";
+                } else if (i == 3) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "block";
+                }
+            });
+        }
+
+        function cleartap() {
+
+            for (let i = 0; i < tapList.length; i++) {
+                tapList[i].classList.remove("tapsee");
+            }
+        }
+    });
+
+
+    // fqa 리스트 아코디언
+
+    window.addEventListener("load", function () {
+        const List = document.querySelectorAll(".listq");
+        for (let i = 0; i < List.length; i++) {
+            List[i].addEventListener("click", function () {
+                clearlist();
+                var panel = this.nextElementSibling;
+                panel.classList.add("listsee");
+            });
+        }
+
+        function clearlist() {
+            for (let i = 0; i < List.length; i++) {
+                var panel = List[i].nextElementSibling;
+                panel.classList.remove("listsee");
+            }
+        }
+    });
+
+
+    // faq 페이지 넘버
+    window.addEventListener("load", function () {
+        const tagList = document.querySelectorAll(".faq-page > p");
+        for (let i = 0; i < tagList.length; i++) {
+            tagList[i].addEventListener("click", function () {
+                clearPage();
+                this.classList.add("faq-checkpage");
+            });
+        }
+
+        function clearPage() {
+
+            for (let i = 0; i < tagList.length; i++) {
+                tagList[i].classList.remove("faq-checkpage");
+            }
+        }
+    });
+
+
+
+</script>
+
+
+
+<footer>
+
+    <div class="main-m">
+
+        <img src="images/header-logo.png">
+
+
+        <div>
+
+            <div>
+
+                <div>
+                    <h3><a href="purchase.html">PURCHASE</a></h3><img src="images/footer-plus-icon.svg">
+                </div>
+
+                <div>
+                    <h3><a href="board.html">BOARD</a></h3><img src="images/footer-plus-icon.svg">
+                </div>
+
+                <div>
+                    <h3><a href="faq.html">FAQ</a></h3><img src="images/footer-plus-icon.svg">
+                </div>
+
+                <div>
+                    <h3><a href="sns.html">STORY</a></h3><img src="images/footer-plus-icon.svg">
+                </div>
+
+                <div>
+                    <h3><a href="login.html">MYPAGE</h3></a><img src="images/footer-plus-icon.svg">
+                </div>
+
+            </div>
+
+            <div>
+                <h3>기업정보</h3>
+                <h3>이용약관</h3>
+                <h3>개인정보처리방침</h3>
+                <h3>매장개설안내</h3>
+            </div>
+
+            <div>
+                <h3>특판사업</h3>
+                <h3>고객지원</h3>
+                <h3>구매인증센터</h3>
+            </div>
+        </div>
+
+        <h3>(주)에이스침대 / 사업자등록번호 : 129-81-02666</h3>
+
+    </div>
+    <div>
+        <h3>COPYRIGHT (C) ACE BED</h3>
+        <h3>CORPORATION ALL RIGHTS RESERVED</h3>
+    </div>
+
+
+
+</footer>
+
+  
+
+    
+
+</body>
+
+
+
+
+</html>

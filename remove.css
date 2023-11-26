@@ -1,0 +1,219 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&display=swap');
+
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid red;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.remov-acc article {
+    margin-top: 200px;
+
+
+}
+
+.remov-acc h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    
+}
+
+.remov-acc h2 {
+
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.remov-acc h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+.remov-acc h4 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: black;
+}
+
+.remov-acc p {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.remov-acc button {
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: 1.05rem;
+    line-height: 3rem;
+    border: 1px solid #dddddd3f;
+    margin: 7px 0;
+    padding: 2px 5px;
+    font-weight: 100;
+}
+
+.remov-acc .blue-btn {
+    background: #0890c8;
+    color: white;
+    font-weight: 300;
+}
+
+.remov-acc .blue-btn:hover {
+    box-shadow: 1px 1px 4px #cccccc;
+    transition: 0.4s;
+}
+
+.remov-acc .gray-btn {
+    background: #ebebeb;
+    color: rgb(0, 0, 0);
+}
+
+.remov-acc .gray-btn:hover {
+    background-color: rgb(116, 116, 116);
+    color: white;
+    transition: 0.3s;
+}
+
+.remov-acc .white-btn {
+    background: none;
+    color: black;
+    width: 100%;
+    font-weight: 300;
+    border: 1px solid #cccccc;
+}
+
+.remov-acc .white-btn:hover {
+    box-shadow: 1px 1px 4px #cccccc;
+    transition: 0.5s;
+    background-color: rgba(235, 235, 235, 0.822);
+}
+
+
+
+.remov-acc .content-box {
+    border: 1px solid #dfdfdf;;
+    border-radius: 0px;
+    margin: 50px 5%;
+    padding: 50px 30px;
+}
+
+.remov-acc .essential::after {
+    content: '*';
+    color: #0890c8;
+}
+
+.remov-acc hr {
+    border-bottom: 1px solid #cccccc;
+    margin: 20px 0;
+}
+
+.remov-acc input {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin: 7px auto;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+
+
+img {
+    width: 17px;
+    margin-right: 10px;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+article>:nth-child(1) {
+    border-bottom: 0px solid #bebebe70;
+    padding-bottom: 10px;
+    margin-bottom: 80px;
+}
+
+
+/* 링크 기본값 */
+
+
+
+.remov-acc {
+    text-align: center;
+}
+
+.remov-acc>:nth-child(2) button {
+    margin-top: 30px;
+}
+
+.remov-acc>:nth-child(3) p {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.remov-acc>:nth-child(3) select {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 0px;
+}
+
+.remov-acc>:nth-child(3) textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+}
+
+.remov-acc>:nth-child(2) div {
+    font-size: 1.1em;
+}
+
+
+
+.remov-acc>:nth-child(4) img {
+    width: 80px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+
+
+@media screen and (min-width: 1366px) {
+    .content-box {
+        width: 600px;
+        margin: 70px auto;
+    }
+}
+</style>

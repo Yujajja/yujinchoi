@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>ace news</title>
+    <link rel="stylesheet" href="posting.css">
+    <style type="text/css"></style>
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 스와이프 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--slick-->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+      <!-- 제이쿼리 불러오기 -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  
+
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<body>
+ 
+    <header>
+
+        <div class="m-header">
+
+
+            <div class="pc-header">
+                <div>
+                    <img src="images/header-logo.png" alt="logo" href="index.html">
+                </div>
+                <div>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                    <a href="purchase.html">
+                        <h3>PURCHASE</h3>
+                    </a>
+                    <a href="login.html">
+                        <h3>LOGIN</h3>
+                    </a>
+                    <a href="joinus.html">
+                        <h3>JOINUS</h3>
+                    </a>
+                    <a href="remove.html">
+                        <h3>REMOVE</h3>
+                    </a>
+                    <a href="board.html">
+                        <h3>BOARD</h3>
+                    </a>
+                    <a href="qna.html">
+                        <h3>QNA</h3>
+                    </a>
+                    <a href="faq.html">
+                        <h3>FAQ</h3>
+                    </a>
+                    <a href="news.html">
+                        <h3>NEWS</h3>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+            <a href="index.html" class="logo img-box block">
+                <img src="images/header-logo.png" alt="logo">
+            </a>
+            <a href="#" class="search img-box block">
+                <img src="https://www.dacorkorea.com/images/icon-search.png" alt="search">
+            </a>
+            <a href="joinus.html" class="join img-box block">
+                <img src="images/header-logo-join.png" alt="search">
+            </a>
+
+
+            <div class="m-menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mobile-mask"></div>
+
+
+
+            <div class="m-menu-list">
+
+                <ul>
+
+                    <li class="mypage">
+                        <div><a href="#">회원가입/로그인하기<div class="xi-angle-right"></div></a></div>
+                        <div><a href="#">회원가입 후 더 많은 혜택을 누리세요.</a></div>
+
+
+                    </li>
+
+    
+                    <li class="delay-1">
+                        <a href="index.html">HOME<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-2">
+                        <a href="purchase.html">PURCHASE<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-3">
+                        <a href="login.html">LOGIN<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-4">
+                        <a href="joinus.html">JOINUS<span class="cell-right"></span></a>
+                        <ul>
+                            <li><a href="remove.html">REMOVE</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="delay-5">
+                        <a href="board.html">BOARD<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-6">
+                        <a href="qna.html">QNA<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-7">
+                        <a href="faq.html">FAQ<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-8">
+                        <a href="news.html">NEWS<span class="cell-right"></span></a>
+                    
+                    </li>
+
+
+
+                    <li class="second-menu">
+                        <div><a href="#">추천 키워드</a></div>
+                        <div><a href="#">컬렉션</a></div>
+                        <div><a href="#">SNS</a></div>
+                        <div><a href="#">고객센터</a></div>
+                    </li>
+
+
+                    <li class="last-menu">
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-1.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-2.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-3.png">
+                        </div>
+                </ul>
+
+            </div>
+
+            <div class="m-search-on">
+                <div class="search-b"></div>
+                <div class="search-b"></div>
+                <div class="m-search-box">
+
+                    <input type="search" placeholder=" 제품 정보를 빠르게 찾아보세요">
+                    <a href="#" class="img-box block"><img src="images/header-m-search-on-icon.png"
+                            alt="search"></a>
+                </div>
+                <div class="m-recommend-word">
+                    <p><a href="#" class="block">추천 키워드</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#프레임</a></li>
+                        <li><a href="#" class="block delay-2">#1인용 리클라이너</a></li>
+                        <li><a href="#" class="block delay-3">#마이크로케어</a></li>
+                    </ul>
+
+                    <p><a href="#" class="block">인기 검색어</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#고객체험</a></li>
+                        <li><a href="#" class="block delay-2">#웨딩멤버스</a></li>
+                        <li><a href="#" class="block delay-3">#매장찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  
+  </header>
+
+  
+
+  <script>
+    
+
+    
+    // 상단 메뉴 관련
+    $('.header > .header-inner > .top-menu-bar > ul > li').mouseenter(function () {
+        $(this).addClass('active');
+        $(this).find('> a').addClass('active');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > li').mouseleave(function () {
+        $(this).removeClass('active');
+        $(this).find('> a').removeClass('active');
+    });
+
+    // 상단 2차 메뉴 배경
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-1').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '164px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-1').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-2').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '238px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-2').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-3').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '164px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-3').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-4').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '90px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-4').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-5').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '127px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-5').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+
+    // 서치 박스
+    $('.header > .header-inner > .search, .search-on > .search-inner > .close-btn ').click(function () {
+        $('.header > .header-inner > .search-on').toggleClass('active');
+    });
+
+    // 모바일 메뉴 버튼
+    $('.m-header > .m-menu-btn').click(function () {
+        if ($(this).hasClass('active')) {
+            $('html').removeClass('m-menu-scroll');
+
+            $(this).removeClass('active');
+            $(this).siblings('.mobile-mask').css('height', '');
+            $(this).siblings('.m-menu-list').removeClass('active');
+        }
+        else {
+            $('html').addClass('m-menu-scroll');
+
+            $('.m-header > .search > img').attr('src', 'https://www.dacorkorea.com/images/icon-search.png');
+            $('.m-header > .m-search-on').removeClass('active');
+
+            $(this).siblings('.m-menu-list').find(' > ul > li.active').removeClass('active');
+            $(this).siblings('.m-menu-list').find(' > ul > li > ul').slideUp(0);
+
+            $(this).addClass('active');
+            $(this).siblings('.mobile-mask').css('height', '100%');
+            $(this).siblings('.m-menu-list').addClass('active');
+        };
+    });
+
+    // 모바일 메뉴 리스트
+    $('.m-header > .m-menu-list > ul > li').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).find(' > ul').slideUp(300);
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).siblings('li.active').removeClass('active');
+            $(this).siblings().find(' > ul').slideUp(300);
+            $(this).find(' > ul').slideDown(300);
+            $(this).addClass('active');
+        }
+    });
+
+    $('.m-header > .m-menu-list > ul > li > ul').click(function (e) {
+        e.stopPropagation();
+    });
+
+    // 모바일 서치 온
+    $('.m-header > .search').click(function () {
+        if ($('.m-header > .m-search-on').hasClass('active')) {
+            $('html').removeClass('m-menu-scroll');
+
+            $(this).find(' > img').attr('src', 'https://www.dacorkorea.com/images/icon-search.png');
+            $(this).siblings('.mobile-mask').css('height', '');
+            $('.m-header > .m-search-on').removeClass('active');
+        }
+        else {
+            $('html').addClass('m-menu-scroll');
+
+            $('.m-header > .m-menu-btn').removeClass('active');
+            $(this).siblings('.m-menu-list').removeClass('active');
+
+            $(this).find(' > img').attr('src', 'https://www.dacorkorea.com/images/icon-search-close.png');
+            $(this).siblings('.mobile-mask').css('height', '100%');
+            $('.m-header > .m-search-on').addClass('active');
+        }
+    });
+
+
+</script>
+
+
+
+    <article class="news-slid">
+        <div>
+            <h1>News</h1>
+            <strong>에이스 침대의 소식을<br>
+                한 눈에 모아보세요.</strong>
+            <p>미디어 홍보 자료 및 최신 소식을 알려드립니다.</p>
+        </div>
+    </article>
+
+
+    <article class="news-list list">
+        <div>
+            <p>총 <span class="text-red">312</span> 건</p>
+            <div>
+                <select>
+                    <option value="">전체</option>
+                    <option value="">제목</option>
+                    <option value="">내용</option>
+                </select>
+                <div>
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                    <img
+                        src="images/news-list-icon.png">
+                </div>
+            </div>
+        </div>
+        <section>
+            <div>
+                <img src="images/news-list-pic1.png">
+                <div>+</div>
+            </div>
+            <div>
+                <h3>
+                    에이스침대, 로맨틱한 신혼 감성 침대 ‘아망드(AMANDE)’ 출시</h3>
+                <p>신제품 ‘아망드’는 유니크한 아치 스타일의 헤드보드가 인상적인 제품으로, 중앙에서부터 부드러운 곡선을 그리는 실루엣이 우아한 무드를 자아낸다. 은은한 톤의 파우더핑크 컬러는 침실을
+                    한층 따뜻하고 차분하게 만들어주며 어떠한 인테리어와도 조화롭게 어울린다..</p>
+                <small>23.06.01</small>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/news-list-pic2.png">
+                <div>+</div>
+            </div>
+            <div>
+                <h3>에이스침대, 가을 인테리어 완성할 신제품 '모데나' 출시</h3>
+                <p>신제품 모데나의 헤드보드는 둥글고 단단한 조약돌의 이미지를 모티브로 라운드형으로 디자인됐다.
+                    중앙의 더해진 가로 라인은 침실이 더 넓어 보이는 느낌을 준다. 월넛 내추럴 무늬목을 사용해 신혼 무드에 알맞은 아늑한 침실 분위기를 완성한다.</p>
+                <small>22.05.23</small>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/news-list-pic3.png">
+                <div>+</div>
+            </div>
+            <div>
+                <h3>박보검 "어디서 시작된거야?"…'침대는 과학' 소환한 에이스침대</h3>
+                <p>"침대는 가구가 아닙니다. 침대는 과학입니다."
+
+                    에이스침대는 1993년 이 광고 슬로건으로 큰 인기를 끌었다. 훗날 드라마 '모래시계 검사'로 활약하는 배우 박상원 씨의 대사는 허리 통증을 겪는 소비자들을 겨냥해 만든 것이었다.
+                </p>
+                <small>22.05.21</small>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/news-list-pic4.png">
+                <div>+</div>
+            </div>
+            <div>
+                <h3>에이스침대, 취향대로 꾸미는 홈퍼니싱 침대 ‘바치오’ 출시</h3>
+                <p>신제품 ‘바치오’는 이태리어로 ‘이마에 가볍게 키스하다’라는 뜻으로, 헤드보드 전면에 포스터, 엽서, 포토카드 등 원하는 소품을 자석을 활용해 자유롭게 부착할 수 있다.</p>
+                <small>22.05.18</small>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/news-list-pic5.png">
+                <div>+</div>
+            </div>
+            <div>
+                <h3>에이스침대, 창립 60주년 한정판 매트리스 출시 기념 프로모션</h3>
+                <p>프리미엄 소프트 타입 매트리스 ''로얄 에이스 60th''
+                    첨단 기술·최고급 원단 적용해 편안함 높여
+                    백화점 상품권 증정 혜택 제공</p>
+                <small>22.01.27</small>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/news-list-pic6.png">
+                <div>+</div>
+            </div>
+            <div>
+                <h3>'창립 60년' 맞은 에이스침대…사은행사 '러브페어' 진행</h3>
+                <p>에이스침대는 창립 60주년을 맞아 대규모 사은 행사 '러브페어'를 연다고 11일 밝혔다.</p>
+                <small>21.12.13</small>
+            </div>
+        </section>
+        <div class="page">
+            <p class="checkpage">1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+    </article>
+
+    <footer>
+
+        <div class="main-m">
+    
+            <img src="images/header-logo.png">
+    
+    
+            <div>
+    
+                <div>
+    
+                    <div>
+                        <h3><a href="purchase.html">PURCHASE</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="board.html">BOARD</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="faq.html">FAQ</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="sns.html">STORY</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="login.html">MYPAGE</h3></a><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                </div>
+    
+                <div>
+                    <h3>기업정보</h3>
+                    <h3>이용약관</h3>
+                    <h3>개인정보처리방침</h3>
+                    <h3>매장개설안내</h3>
+                </div>
+    
+                <div>
+                    <h3>특판사업</h3>
+                    <h3>고객지원</h3>
+                    <h3>구매인증센터</h3>
+                </div>
+            </div>
+    
+            <h3>(주)에이스침대 / 사업자등록번호 : 129-81-02666</h3>
+    
+        </div>
+        <div>
+            <h3>COPYRIGHT (C) ACE BED</h3>
+            <h3>CORPORATION ALL RIGHTS RESERVED</h3>
+        </div>
+    
+    
+    
+    </footer>
+
+
+</body>
+
+
+
+
+
+</html>

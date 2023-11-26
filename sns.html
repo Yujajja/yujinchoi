@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>ace sns</title>
+    <link rel="stylesheet" href="posting.css">
+    <style type="text/css"></style>
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 스와이프 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--slick-->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    
+ 
+    <header>
+
+        <div class="m-header">
+
+
+            <div class="pc-header">
+                <div>
+                    <img src="images/header-logo.png" alt="logo" href="index.html">
+                </div>
+                <div>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                    <a href="purchase.html">
+                        <h3>PURCHASE</h3>
+                    </a>
+                    <a href="login.html">
+                        <h3>LOGIN</h3>
+                    </a>
+                    <a href="joinus.html">
+                        <h3>JOINUS</h3>
+                    </a>
+                    <a href="remove.html">
+                        <h3>REMOVE</h3>
+                    </a>
+                    <a href="board.html">
+                        <h3>BOARD</h3>
+                    </a>
+                    <a href="qna.html">
+                        <h3>QNA</h3>
+                    </a>
+                    <a href="faq.html">
+                        <h3>FAQ</h3>
+                    </a>
+                    <a href="news.html">
+                        <h3>NEWS</h3>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+            <a href="index.html" class="logo img-box block">
+                <img src="images/header-logo.png" alt="logo">
+            </a>
+            <a href="#" class="search img-box block">
+                <img src="https://www.dacorkorea.com/images/icon-search.png" alt="search">
+            </a>
+            <a href="joinus.html" class="join img-box block">
+                <img src="images/header-logo-join.png" alt="search">
+            </a>
+
+
+            <div class="m-menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mobile-mask"></div>
+
+
+
+            <div class="m-menu-list">
+
+                <ul>
+
+                    <li class="mypage">
+                        <div><a href="#">회원가입/로그인하기<div class="xi-angle-right"></div></a></div>
+                        <div><a href="#">회원가입 후 더 많은 혜택을 누리세요.</a></div>
+
+
+                    </li>
+
+    
+                    <li class="delay-1">
+                        <a href="index.html">HOME<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-2">
+                        <a href="purchase.html">PURCHASE<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-3">
+                        <a href="login.html">LOGIN<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-4">
+                        <a href="joinus.html">JOINUS<span class="cell-right"></span></a>
+                        <ul>
+                            <li><a href="remove.html">REMOVE</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="delay-5">
+                        <a href="board.html">BOARD<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-6">
+                        <a href="qna.html">QNA<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-7">
+                        <a href="faq.html">FAQ<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-8">
+                        <a href="news.html">NEWS<span class="cell-right"></span></a>
+                    
+                    </li>
+
+
+
+                    <li class="second-menu">
+                        <div><a href="#">추천 키워드</a></div>
+                        <div><a href="#">컬렉션</a></div>
+                        <div><a href="#">SNS</a></div>
+                        <div><a href="#">고객센터</a></div>
+                    </li>
+
+
+                    <li class="last-menu">
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-1.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-2.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-3.png">
+                        </div>
+                </ul>
+
+            </div>
+
+            <div class="m-search-on">
+                <div class="search-b"></div>
+                <div class="search-b"></div>
+                <div class="m-search-box">
+
+                    <input type="search" placeholder=" 제품 정보를 빠르게 찾아보세요">
+                    <a href="#" class="img-box block"><img src="images/header-m-search-on-icon.png"
+                            alt="search"></a>
+                </div>
+                <div class="m-recommend-word">
+                    <p><a href="#" class="block">추천 키워드</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#프레임</a></li>
+                        <li><a href="#" class="block delay-2">#1인용 리클라이너</a></li>
+                        <li><a href="#" class="block delay-3">#마이크로케어</a></li>
+                    </ul>
+
+                    <p><a href="#" class="block">인기 검색어</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#고객체험</a></li>
+                        <li><a href="#" class="block delay-2">#웨딩멤버스</a></li>
+                        <li><a href="#" class="block delay-3">#매장찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  
+  </header>
+
+
+
+    <article class="bd-text">
+
+        <h1>Board</h1>
+
+    </article>
+
+
+
+    <article class="bd-list list">
+        <h1>NOW SNS</h1>
+
+        <div class="bd-icon">
+            <img src="images/sns-bd-icon-01.png">
+            <img src="images/sns-bd-icon-02.png">
+            <img src="images/sns-bd-icon-03.png">
+            <img src="images/sns-bd-icon-04.png">
+        </div>
+
+        <h2>INSTAGRAM</h2>
+
+        <section>
+            <div>
+                <img src="images/index-bd-pic1.png">
+            </div>
+            <div>
+                <h3>취향에 맞는 아이템으로
+                    나만의 침대를 DIY 하다!</h3>
+                <p>
+                    홈퍼니싱 컨셉의 𝑩𝑨𝑪𝑰𝑶와
+                    당신의 개성과 취향을 담은
+                    특별한 침실을 만들어 보세요!
+
+                </p>
+                <small>
+                    acebed_official · 6시간 전
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="images/index-bd-pic2.png">
+            </div>
+            <div>
+                <h3>모던한 호텔 스위트룸에 온 듯한
+                    신혼부부 인테리어를 소개합니다!</h3>
+                <p>신혼부부 국민 프레임 BMA-1148
+                    눕자마자 선택하게 된 매트리스 HYBRID TECH–RED
+                    신혼부부의 후기가 궁금하시다면?
+                </p>
+                <small>
+                    acebed_official · 3일 전
+                </small>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="images/index-bd-pic3.png">
+            </div>
+            <div>
+                <h3>세계고양이의날‍ 🐈</h3>
+                <p>
+                    많은 친구들이 집사와 함께
+                    포근한 침대에서 행복하기를 바란다 냥-🐱
+                    (집사야 츄르 좀 주라-)
+                </p>
+                <small>
+                    acebed_official · 10일 전
+                </small>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="images/index-bd-pic4.png">
+            </div>
+            <div>
+                <h3>매일 아침, 휴양지의 호텔에서
+                    눈뜨는 것 같은 기분🌴</h3>
+                <p>이태리어로 ‘식물’이라는 의미를 가진
+                    에스닉한 감성의 𝑬𝑹𝑰𝑪𝑨를 소개합니다.
+                </p>
+                <small>
+                    acebed_official · 17일 전
+                </small>
+            </div>
+        </section>
+
+        <h2 class="face-h2">FACEBOOK</h2>
+
+        <div class="face-im">
+
+            <img class="face-img" src="images/sns-face-im01.png">
+            <img class="face-img" src="images/sns-face-im02.png">
+            <img class="face-img" src="images/sns-face-im03.png">
+            <img class="face-img" src="images/sns-face-im04.png">
+            
+        </div>
+
+        <div><a href="#">더 보기 +</a></div>
+    </article>
+
+
+
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+    includeHTML();
+    </script>
+  
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

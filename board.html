@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>ace board</title>
+    <link rel="stylesheet" href="posting.css">
+    <style type="text/css"></style>
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 스와이프 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--slick-->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+    <script type="text/javascript" src="script.js"></script>
+
+ 
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+</head>
+
+<body>
+ 
+    <header>
+
+        <div class="m-header">
+
+
+            <div class="pc-header">
+                <div>
+                    <img src="images/header-logo.png" alt="logo" href="index.html">
+                </div>
+                <div>
+                    <a href="index.html">
+                        <h3>HOME</h3>
+                    </a>
+                    <a href="purchase.html">
+                        <h3>PURCHASE</h3>
+                    </a>
+                    <a href="login.html">
+                        <h3>LOGIN</h3>
+                    </a>
+                    <a href="joinus.html">
+                        <h3>JOINUS</h3>
+                    </a>
+                    <a href="remove.html">
+                        <h3>REMOVE</h3>
+                    </a>
+                    <a href="board.html">
+                        <h3>BOARD</h3>
+                    </a>
+                    <a href="qna.html">
+                        <h3>QNA</h3>
+                    </a>
+                    <a href="faq.html">
+                        <h3>FAQ</h3>
+                    </a>
+                    <a href="news.html">
+                        <h3>NEWS</h3>
+                    </a>
+
+
+
+                </div>
+            </div>
+
+            <a href="index.html" class="logo img-box block">
+                <img src="images/header-logo.png" alt="logo">
+            </a>
+            <a href="#" class="search img-box block">
+                <img src="https://www.dacorkorea.com/images/icon-search.png" alt="search">
+            </a>
+            <a href="joinus.html" class="join img-box block">
+                <img src="images/header-logo-join.png" alt="search">
+            </a>
+
+
+            <div class="m-menu-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mobile-mask"></div>
+
+
+
+            <div class="m-menu-list">
+
+                <ul>
+
+                    <li class="mypage">
+                        <div><a href="#">회원가입/로그인하기<div class="xi-angle-right"></div></a></div>
+                        <div><a href="#">회원가입 후 더 많은 혜택을 누리세요.</a></div>
+
+
+                    </li>
+
+    
+                    <li class="delay-1">
+                        <a href="index.html">HOME<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-2">
+                        <a href="purchase.html">PURCHASE<span class="cell-right"></span></a>
+                    </li>
+
+
+                    <li class="delay-3">
+                        <a href="login.html">LOGIN<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-4">
+                        <a href="joinus.html">JOINUS<span class="cell-right"></span></a>
+                        <ul>
+                            <li><a href="remove.html">REMOVE</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="delay-5">
+                        <a href="board.html">BOARD<span class="cell-right"></span></a>
+                    </li>
+
+                    <li class="delay-6">
+                        <a href="qna.html">QNA<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-7">
+                        <a href="faq.html">FAQ<span class="cell-right"></span></a>
+                    
+                    </li>
+
+                    <li class="delay-8">
+                        <a href="news.html">NEWS<span class="cell-right"></span></a>
+                    
+                    </li>
+
+
+
+                    <li class="second-menu">
+                        <div><a href="#">추천 키워드</a></div>
+                        <div><a href="#">컬렉션</a></div>
+                        <div><a href="#">SNS</a></div>
+                        <div><a href="#">고객센터</a></div>
+                    </li>
+
+
+                    <li class="last-menu">
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-1.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-2.png">
+                        </div>
+
+                        <div>
+                            <img
+                                src="images/header-lastmenu-logo-3.png">
+                        </div>
+                </ul>
+
+            </div>
+
+            <div class="m-search-on">
+                <div class="search-b"></div>
+                <div class="search-b"></div>
+                <div class="m-search-box">
+
+                    <input type="search" placeholder=" 제품 정보를 빠르게 찾아보세요">
+                    <a href="#" class="img-box block"><img src="images/header-m-search-on-icon.png"
+                            alt="search"></a>
+                </div>
+                <div class="m-recommend-word">
+                    <p><a href="#" class="block">추천 키워드</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#프레임</a></li>
+                        <li><a href="#" class="block delay-2">#1인용 리클라이너</a></li>
+                        <li><a href="#" class="block delay-3">#마이크로케어</a></li>
+                    </ul>
+
+                    <p><a href="#" class="block">인기 검색어</a></p>
+                    <ul>
+                        <li><a href="#" class="block delay-1">#고객체험</a></li>
+                        <li><a href="#" class="block delay-2">#웨딩멤버스</a></li>
+                        <li><a href="#" class="block delay-3">#매장찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  
+  </header>
+
+
+  <script>
+    
+
+    
+    // 상단 메뉴 관련
+    $('.header > .header-inner > .top-menu-bar > ul > li').mouseenter(function () {
+        $(this).addClass('active');
+        $(this).find('> a').addClass('active');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > li').mouseleave(function () {
+        $(this).removeClass('active');
+        $(this).find('> a').removeClass('active');
+    });
+
+    // 상단 2차 메뉴 배경
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-1').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '164px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-1').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-2').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '238px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-2').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-3').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '164px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-3').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-4').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '90px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-4').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-5').mouseenter(function () {
+        $('.sub-menu-bg').css('height', '127px');
+    });
+    $('.header > .header-inner > .top-menu-bar > ul > .menu-5').mouseleave(function () {
+        $('.sub-menu-bg').css('height', '');
+    });
+
+
+    // 서치 박스
+    $('.header > .header-inner > .search, .search-on > .search-inner > .close-btn ').click(function () {
+        $('.header > .header-inner > .search-on').toggleClass('active');
+    });
+
+    // 모바일 메뉴 버튼
+    $('.m-header > .m-menu-btn').click(function () {
+        if ($(this).hasClass('active')) {
+            $('html').removeClass('m-menu-scroll');
+
+            $(this).removeClass('active');
+            $(this).siblings('.mobile-mask').css('height', '');
+            $(this).siblings('.m-menu-list').removeClass('active');
+        }
+        else {
+            $('html').addClass('m-menu-scroll');
+
+            $('.m-header > .search > img').attr('src', 'https://www.dacorkorea.com/images/icon-search.png');
+            $('.m-header > .m-search-on').removeClass('active');
+
+            $(this).siblings('.m-menu-list').find(' > ul > li.active').removeClass('active');
+            $(this).siblings('.m-menu-list').find(' > ul > li > ul').slideUp(0);
+
+            $(this).addClass('active');
+            $(this).siblings('.mobile-mask').css('height', '100%');
+            $(this).siblings('.m-menu-list').addClass('active');
+        };
+    });
+
+    // 모바일 메뉴 리스트
+    $('.m-header > .m-menu-list > ul > li').click(function () {
+        if ($(this).hasClass('active')) {
+            $(this).find(' > ul').slideUp(300);
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).siblings('li.active').removeClass('active');
+            $(this).siblings().find(' > ul').slideUp(300);
+            $(this).find(' > ul').slideDown(300);
+            $(this).addClass('active');
+        }
+    });
+
+    $('.m-header > .m-menu-list > ul > li > ul').click(function (e) {
+        e.stopPropagation();
+    });
+
+    // 모바일 서치 온
+    $('.m-header > .search').click(function () {
+        if ($('.m-header > .m-search-on').hasClass('active')) {
+            $('html').removeClass('m-menu-scroll');
+
+            $(this).find(' > img').attr('src', 'https://www.dacorkorea.com/images/icon-search.png');
+            $(this).siblings('.mobile-mask').css('height', '');
+            $('.m-header > .m-search-on').removeClass('active');
+        }
+        else {
+            $('html').addClass('m-menu-scroll');
+
+            $('.m-header > .m-menu-btn').removeClass('active');
+            $(this).siblings('.m-menu-list').removeClass('active');
+
+            $(this).find(' > img').attr('src', 'https://www.dacorkorea.com/images/icon-search-close.png');
+            $(this).siblings('.mobile-mask').css('height', '100%');
+            $('.m-header > .m-search-on').addClass('active');
+        }
+    });
+
+
+</script>
+
+
+
+    <article class="bd-text">
+
+        <h1>Board</h1>
+
+    </article>
+
+
+    <article class="bd-write">
+        <h1>고객 후기</h1>
+        <h3 class="essential">후기 작성하기</h3>
+        <select>
+            <option value="">카테고리</option>
+            <option value="">포토 후기</option>
+            <option value="">100일 사용 후기</option>
+        </select>
+
+        <h3 class="essential">제품 선택하기</h3>
+        <select>
+            <option value="">선택</option>
+            <option value="">프레임</option>
+            <option value="">매트리스</option>
+            <option value="">스트레스리스</option>
+        </select>
+
+
+        <h3 class="essential">구매 매장</h3>
+        <input type="text" placeholder="매장명 또는 지역명">
+        <p>온라인 몰을 통해 구매하신 고객님께서는 구매하신 온라인 몰에서 진행하는 후기 이벤트로 참여 부탁 드립니다.</p>
+
+        <h3>SNS 후기</h3>
+        <textarea name="" placeholder="본인의 SNS 계정에 작성한 제품 구매 후기 URL을 남겨주세요. (블로그, 페이스북, 인스타 등)"></textarea>
+
+        <h3 class="essential">내용작성</h3>
+        <textarea name="" placeholder="후기를 남겨주세요."></textarea>
+
+        <h3 class="essential">이미지등록</h3>
+
+        <div class="img-file">
+            <input type="file" id="file">
+            <label for="file"><img
+                    src="images/img-file-icon.png"></label>
+            <input type="file" id="file">
+            <label for="file"><img
+                    src="images/img-file-icon.png"></label>
+            <input type="file" id="file">
+            <label for="file"><img
+                    src="images/img-file-icon.png"></label>
+            <input type="file" id="file">
+            <label for="file"><img
+                    src="images/img-file-icon.png"></label>
+        </div>
+
+        <p>※ JPG, PNG, GIF 파일만 추가 가능(10mb 이하), 최대 4개 이미지 등록 가능</p>
+
+        <div> <button class="btn-eee">등록하기</button> <button class="btn-555">취소하기</button> </div>
+    </article>
+
+
+    <article class="bd-see">
+        <h1>BEST후기</h1>
+
+        <div class="see-title">
+            <h2>LUCE-III, HYBRID THEH - BLUE - 신세계 하남점</h2>
+            <small>정○○ 고객님</small>
+        </div>
+
+        <div class="see-main">
+            <div>
+                <p>2023-05-02</p>
+                <div>
+                    <p>★★★★★</p>
+                    <p>작성자</p><span>정*주</span>
+                </div>
+            </div>
+
+            <div>
+                <section>
+                    <p>신세계 하남점에서 구입 했는데
+                        너무 친절하시고 배송까지 신경 써주셔서 좋았어요! </p>
+                    <div><img src="images/board-see-main-pic.jpg"></div>
+                    <p>
+                        중간에 배송 방법 및 날짜 시간도 바꿔야 하는 상황이 생겨서 바꿨는데 싫은 내색 하나도 없으시고 너무 친절하게 바꿔주셨어요 !
+                        점장님 정말 찐이세요!
+                        너뮤 감사해서 배송 받고 나서 문자로 연락도 따로 드렸어요! 다음에 아기 낳거나 본가 침대 바꾼다 하면 신세계 하남점에서 무조건 구입 할거에요!
+                    </p>
+                </section>
+                <section>
+                    <div><img src="images/board-see-main-pic2.jpg"></div>
+                    <p>
+                        프레임은 볼수록 이뻐요 너무 튀지도 않고 집과 물아일체가 되는데 너무 이뻐요~~~~ 조명도 눈부시지 않고 딱 좋구요! 너무 잘 산거 같아서 기분 좋아요!!
+                        :)</p>
+                </section>
+
+            </div>
+
+            <div class="see-sharing">
+                <button><img src="images/board-see-sharing-icon.png"></button>
+            </div>
+        </div>
+
+        <div class="see-comments">
+
+            <p>댓글 2개</p>
+
+            <section>
+                <div> <img
+                        src="images/board-see-comments-icon.png"
+                        alt=""></div>
+                <div>
+                    <p>acelover</p>
+                    <p>프레임 색이 너무 예쁜 것같아요.</p>
+                    <p>1시간 전</p>
+                </div>
+                <div><img
+                        src="images/board-see-comments-icon2.png">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <img src="images/board-see-comments-icon.png"
+                        alt="">
+                </div>
+                <div>
+                    <p>pramemania</p>
+                    <p>배송까지 얼마 걸렸나요?</p>
+                    <p>1시간 전</p>
+                </div>
+                <div><img
+                        src="images/board-see-comments-icon2.png">
+                </div>
+            </section>
+            <textarea placeholder="댓글을 입력하세요"></textarea>
+            <div>
+                <div><input type="checkbox" class="input-chek" id="secret-check"><label for="secret-check"
+                        class="form-chek">비밀글</label></div>
+                <div><button class="btn-555">등록하기</button></div>
+            </div>
+        </div>
+
+        <div class="see-popular">
+            <p>인기 게시글</p>
+            <section>
+                <div>
+                    <p>이번 9월달 결혼을 앞두고 신혼 침대를 고민하면서 여기저기 돌아다녔고, 대전 신세계점 에이스 침대 매장에 들어갔습니다. 들어가자마자 친절한 이창규점장님 이하 직원들 너무
+                        감사드립니다 ㅠㅠ
+                        한분한분 인사드릴 순 없으나 침대를 고민하는데 큰 도움을 주셔서 너무 감사드립니다.
+
+                        1. 제품설명
+                        침대는 거품이라고 생각했던 저는 점장님의 자세한 설명을 듣고 침대를 이해하기 시작했습니다.
+                        매장에 전시되어 있는 침대를 하나하나 누워보고 저한테 맞는 침대를 추천해주셨습니다.
+
+                        2. 친절
+                        매장에 들어가서 정말 감동받았던 부분입니다. 사실 옆 매장에 타브랜드 보다가 왔음에도 잘 응대해주셔서 기분이 너무 좋았습니다. 더워서 목이말라 물을 요청하였는데도 불쾌한
+                        기색 하나 없이 물을 가져다 주셔서 너무 감동 받았습니다^^
+
+                        3. 제품 받을때까지 응대
+                        계약하고 제품을 받을때까지 꽤 긴시간을 가졌는데, 먼저 전화하셔서 불편한건 없는지 엘리에비터는 사용할 수 있는지 집 상황을 미리 파악하시는 센스가 너무 좋았습니다.
+                        사실 신혼집은 사다리차를 이용할 수 없었는데 미리 말씀주셔서 사전에 협의볼 수 있었습니다.
+
+                        4. 배송받은 후
+                        배송을 받고는 불편한게 없는지 꼼꼼하게 확인해주셨습니다.
+                        마이크로가드를 수령 받을수 있는지 한번 더 안내를 주셔서 해피콜을 받고 신청했습니다
+                        계약하고 긴 시간이라 잊어먹을 수도 있는 사람이지만, 얼굴을 기억해주시고 기분 좋은 침대생활을 할 수 있었습니다.
+
+                        5. 제품
+                        명불허전 에이스 침대입니다.
+                        시*스 침대랑 비교해도 정말 으뜸으로 편하고 이쁩니다
+                        사이드 판넬을 추가해 호텔분위기를 낼 수 잇어서 진짜 추천드립니다.
+                        아래 서랍까지 두면 너무 이쁜 안방이 될 것 같네요!</p>
+                </div>
+                <div>
+                    <img src="images/board-see-popular-pic.jpg">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>너무 잘 쓰고 있는 에이스 침대!
+                        구매는 롯데백화점 안산점에서 했어요. 에이스랑 타업체 돌아다녔는데 매트리스도 에이스가 편하고 매니저님께서 저희에게 맞는걸로 추천을 너무 잘 해주셔서 에이스에서 구매하게
+                        됐어요~!
+                        프레임은 부클 관리가 어려울 것 같아서 가죽이나 나무 프레임을 구매할 생각이었어요. 근데 부클 프레임이 너무 예뻐서
+                        관리 방법을 여쭤보니까 코팅처리가 돼서 방수가 되고 커피같은 게 묻었을 때는 물티슈로 바로 지우면 지워진다고 하시더라고요.
+                        영상도 보여주셨는데 생각보다 관리가 쉽더라고요. 그래서 이 침대로 결정했어요~!
+                        프레임도 프레임이지만 매트리스가 역시 편해요. 여러군데 누워보고 결정했는데요, 현재 너무 편하게 꿀잠자고 있어요.
+                        침대 구매 고민하시는 분 계시다면 에이스 침대 추천합니다~!!</p>
+                </div>
+                <div>
+                    <img src="images/board-see-popular-pic.jpg">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>우리 첮째와 둘째의 침대는 둘다 용산아이파크몰에서 구입하였습니다. 둘다 매증에서부터 누어보더니 너무 좋다고 ㅋㅋ 앞에있는 라텍스 침대 매장에서도 누어ㅓ보더니 에이스로 산다고
+                        오늘 사야 한다고 해서 바로 계약 후 벌써 백일이 지났네요 ㅋㅋ 둘째는 완전 침대에서 떨어질주 모릅니다. 너무 꿀잠이 온다고 책도, 게임도 침대에서 하네요. 역시 믿고 사는
+                        에이스 더군요. 솔직히 타사 조금더 저렴이 들도 있었지만 얼마 더 투자해서 에이스로 결정하길 진짜 잘한듯 합니다. 다음에도 쭈욱 에이스로 올인 입니다</p>
+                </div>
+                <div>
+                    <img src="images/board-see-popular-pic.jpg">
+                </div>
+
+            </section>
+        </div>
+    </article>
+
+
+    
+    <footer>
+
+        <div class="main-m">
+    
+            <img src="images/header-logo.png">
+    
+    
+            <div>
+    
+                <div>
+    
+                    <div>
+                        <h3><a href="purchase.html">PURCHASE</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="board.html">BOARD</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="faq.html">FAQ</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="sns.html">STORY</a></h3><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                    <div>
+                        <h3><a href="login.html">MYPAGE</h3></a><img src="images/footer-plus-icon.svg">
+                    </div>
+    
+                </div>
+    
+                <div>
+                    <h3>기업정보</h3>
+                    <h3>이용약관</h3>
+                    <h3>개인정보처리방침</h3>
+                    <h3>매장개설안내</h3>
+                </div>
+    
+                <div>
+                    <h3>특판사업</h3>
+                    <h3>고객지원</h3>
+                    <h3>구매인증센터</h3>
+                </div>
+            </div>
+    
+            <h3>(주)에이스침대 / 사업자등록번호 : 129-81-02666</h3>
+    
+        </div>
+        <div>
+            <h3>COPYRIGHT (C) ACE BED</h3>
+            <h3>CORPORATION ALL RIGHTS RESERVED</h3>
+        </div>
+    
+    
+    
+    </footer>
+
+  
+
+
+</body>
+
+
+
+
+
+
+</html>
